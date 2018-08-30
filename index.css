@@ -90,6 +90,12 @@
   text-decoration: none;
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 #animate:hover {
   color: var(--m);
 }
