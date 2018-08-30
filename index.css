@@ -1,0 +1,47 @@
+.body, * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainPage__header {
+  width: 100%;
+}
+
+.mainPage__portrait {
+  width: 50%;
+  margin: 0;
+  float: left
+}
+
+.mainPage__header--block {
+  width: 50%;
+  margin: 0;
+  float: left;
+  height: 50vw;
+  display: flex;
+  align-items: center
+}
+
+.mainPage__about--h1 {
+  font-family: Georgia;
+  font-size: 60px;
+  width: 80%;
+  margin: 10%;
+}
+
+.mainPage__about--p {
+  font-family: Arial;
+  font-size: 14px;
+  width: 80%;
+  margin: 10%
+}
+
+.mainPage__nav {
+}
+
+.mainPage__nav--list {
+}
+
+.mainPage__nav--element {
+  display: block;
+}
