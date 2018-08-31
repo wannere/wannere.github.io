@@ -1,13 +1,18 @@
-window.onscroll = function() {stickyNav()};
+window.onload = init;
 
-var navbar = document.getElementById("navbar");
+function init(){
+  window.onscroll = function() {stickyNav()};
 
-var offset = navbar.offsetTop;
+  var navbar = document.getElementById("navbar");
 
-function stickyNav() {
-  if (window.pageYOffset >= offset) {
-    navbar.addClass("sticky")
-  } else {
-    navbar.removeClass("sticky");
+  var offset = navbar.offsetTop;
+
+  function stickyNav() {
+    if (window.pageYOffset >= offset) {
+      navbar.classList.add("sticky")
+    }
+    else {
+      navbar.classList.remove("sticky");
+    }
   }
 }

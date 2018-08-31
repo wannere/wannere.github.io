@@ -62,11 +62,21 @@
   font-size: 16px;
   width: 30%;
   transition: 0.4s;
+  text-align: center;
+  text-decoration: none;
 }
 
 .mainPage__header--buttons__element:hover {
   background-color: var(--k);
   color: var(--white);
+}
+
+.navbar__wrapper {
+  width: 100%;
+  height: 50px;
+  background-color: var(--k);
+  z-index: 2;
+  float: left;
 }
 
 .mainPage__nav {
@@ -76,18 +86,20 @@
   flex-direction: row;
   align-items: center;
   background-color: var(--k);
+  z-index: 3;
 }
 
 .mainPage__nav--element {
   display: inline-block;
   width: calc(100% / 4);
-  height: 20px;
+  height: 50px;
   text-align: center;
   font-family: var(--serif);
   font-style: italic;
   color: var(--white);
   transition: 0.4s;
   text-decoration: none;
+  line-height: 50px;
 }
 
 .sticky {
