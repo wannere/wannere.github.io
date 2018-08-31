@@ -1,6 +1,7 @@
 .body, * {
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -18,6 +19,7 @@
 .mainPage__header {
   width: 100%;
   display: block;
+  height:50vw;
 }
 
 .mainPage__portrait {
@@ -49,26 +51,28 @@
 .mainPage__header--buttons {
   margin: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .mainPage__header--buttons__element {
   padding: 12px;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--k);
   font-family: var(--sans);
-  border: 2px solid var(--k);
+  border: 2px solid var(--grey);
   border-radius: 5px;
   font-size: 16px;
   width: 30%;
   transition: 0.4s;
   text-align: center;
   text-decoration: none;
+  margin: 10px;
 }
 
 .mainPage__header--buttons__element:hover {
   background-color: var(--k);
   color: var(--white);
+  border: 2px solid var(--k);
 }
 
 .navbar__wrapper {
@@ -102,34 +106,20 @@
   line-height: 50px;
 }
 
+.mainPage__nav--element:hover {
+  color: var(--grey);
+}
+
 .sticky {
   position: fixed;
   width: 100%;
   top: 0;
 }
 
-#animate:hover {
-  color: var(--m);
-}
-
-#typo:hover {
-  color: var(--c);
-}
-
-#brand:hover {
-  color: var(--y);
-}
-
-#top:hover {
-  color: var(--grey);
-}
-
-#contact:hover {
-  color: var(--grey);
-}
-
 .mainPage__section-1 {
   width: 100%;
+  height: 50vw;
+  float: left;
 }
 
 .mainPage__section-1-block {
@@ -138,7 +128,9 @@
   color: var(--white);
   font-family: var(--serif);
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 50vw;
   float: left;
 }
@@ -147,7 +139,7 @@
   text-align: center;
   font-size: 40px;
   width: 80%;
-  margin: 10%;
+  margin: 0 10% 20px 10%;
 }
 
 .mainPage--section-1-photos {
@@ -177,6 +169,8 @@
 
 .mainPage__section-2 {
   width: 100%;
+  height: 50vw;
+  float: left;
 }
 
 .mainPage__section-2-block {
@@ -218,6 +212,8 @@
 
 .mainPage__section-3 {
   width: 100%;
+  height: 50vw;
+  float: left;
 }
 
 .mainPage__section-3-block {
