@@ -40,3 +40,131 @@
 .image__nav--element:hover {
   color: var(--grey);
 }
+
+.image__section {
+  width: 100%;
+}
+
+.image__section--description-m {
+  background-color: var(--m);
+  height: 50vw;
+  width: 30%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2px;
+}
+
+.image__section--description-c {
+  background-color: var(--c);
+  height: 50vw;
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2px;
+}
+
+.image__section--description-y {
+  background-color: var(--y);
+  height: 50vw;
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2px;
+}
+
+.image__section--image {
+  width: 70%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid var(--m);
+  height: 50vw;
+  align-items: center;
+}
+
+.image__section--image-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+}
+
+.image__section--description-h2 {
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 40px;
+  margin: 0 10% 10px 10%;
+}
+
+.image__section--description-p {
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 14px;
+  width: 80%;
+  margin: 0 8% 8% 8%;
+}
+
+.image__section--description-h2-y {
+  color: var(--k);
+  font-family: var(--serif);
+  font-size: 40px;
+  margin: 0 10% 10px 10%;
+}
+
+.image__section--description-p-y {
+  color: var(--k);
+  font-family: var(--sans);
+  font-size: 14px;
+  width: 80%;
+  margin: 0 8% 8% 8%;
+}
+
+.footer {
+  background-color: var(--k);
+  width: 100%;
+  height: 50px;
+  color: var(--white);
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  color: var(--grey);
+  font-family: var(--sans);
+  float: right;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.image__section--image-wrapper--loaders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.loader__gif {
+  width: 30%;
+  height: 30%;
+}
+
+.modern__monster {
+  width: 90%;
+  object-fit: contain;
+}
+
+.riot__grrrl {
+  width: 90%;
+  object-fit: contain;
+}
