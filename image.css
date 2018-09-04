@@ -60,7 +60,7 @@
 
 .image__section--description-c {
   background-color: var(--c);
-  width: 50%;
+  width: 30%;
   float: left;
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@
 
 .image__section--description-y {
   background-color: var(--y);
-  width: 50%;
+  width: 30%;
   float: left;
   display: flex;
   align-items: center;
@@ -80,12 +80,30 @@
   padding-top: 2px;
 }
 
-.image__section--image {
+.image__section--image-m {
   width: 70%;
   float: left;
   display: flex;
   justify-content: center;
   border-top: 2px solid var(--m);
+  align-items: center;
+}
+
+.image__section--image-c {
+  width: 70%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid var(--c);
+  align-items: center;
+}
+
+.image__section--image-y {
+  width: 70%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid var(--y);
   align-items: center;
 }
 
@@ -157,17 +175,7 @@
   height: 30%;
 }
 
-.modern__monster {
-  width: 90%;
-  object-fit: contain;
-}
-
-.riot__grrrl {
-  width: 90%;
-  object-fit: contain;
-}
-
-.sharptooth {
+.big {
   width: 90%;
   object-fit: contain;
 }
