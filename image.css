@@ -43,40 +43,39 @@
 
 .image__section {
   width: 100%;
+  float: left;
+  display: flex;
 }
 
 .image__section--description-m {
   background-color: var(--m);
-  height: 50vw;
   width: 30%;
   float: left;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding-top: 2px;
 }
 
 .image__section--description-c {
   background-color: var(--c);
-  height: 50vw;
   width: 50%;
   float: left;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding-top: 2px;
 }
 
 .image__section--description-y {
   background-color: var(--y);
-  height: 50vw;
   width: 50%;
   float: left;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   padding-top: 2px;
 }
@@ -87,7 +86,6 @@
   display: flex;
   justify-content: center;
   border-top: 2px solid var(--m);
-  height: 50vw;
   align-items: center;
 }
 
@@ -102,7 +100,7 @@
   color: var(--white);
   font-family: var(--serif);
   font-size: 40px;
-  margin: 0 10% 10px 10%;
+  margin: 10px 10% 10px 10%;
 }
 
 .image__section--description-p {
@@ -117,7 +115,7 @@
   color: var(--k);
   font-family: var(--serif);
   font-size: 40px;
-  margin: 0 10% 10px 10%;
+  margin: 10px 10% 10px 10%;
 }
 
 .image__section--description-p-y {
@@ -165,6 +163,11 @@
 }
 
 .riot__grrrl {
+  width: 90%;
+  object-fit: contain;
+}
+
+.sharptooth {
   width: 90%;
   object-fit: contain;
 }
