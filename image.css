@@ -37,6 +37,40 @@
   transition: 0.4s;
 }
 
+.image__nav--mobile {
+  display: none;
+}
+
+.image__nav--mobile-list {
+  display: none;
+}
+
+.image__nav--mobile--element {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .image__nav {
+    display: none;
+  }
+
+  .image__nav--element {
+    display: none;
+  }
+
+  .image__nav--mobile {
+    display: block;
+  }
+
+  .image__nav--mobile-list {
+    display: flex;
+  }
+
+  .image__nav--mobile--element {
+
+  }
+}
+
 .image__nav--element:hover {
   color: var(--grey);
 }
@@ -45,6 +79,14 @@
   width: 100%;
   float: left;
   display: flex;
+}
+
+@media screen and (max-width: 787px) {
+  .image__section {
+    width: 100%;
+    float: left;
+    display: block;
+  }
 }
 
 .image__section--description-m {
@@ -109,6 +151,68 @@
   justify-content: center;
   border-top: 2px solid var(--y);
   align-items: center;
+}
+
+@media screen and (max-width: 787px) {
+  .image__section--description-c {
+    background-color: var(--c);
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 2px;
+    margin-top: none;
+  }
+
+  .image__section--image-c {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image__section--description-y {
+    background-color: var(--y);
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 2px;
+    margin-top: none;
+  }
+
+  .image__section--image-y {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image__section--description-m {
+    background-color: var(--m);
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 2px;
+    margin-top: none;
+  }
+
+  .image__section--image-m {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .image__section--image-wrapper {
@@ -182,4 +286,17 @@
 .big {
   width: 90%;
   object-fit: contain;
+  height: auto;
+}
+
+.big__video {
+  width: 640px;
+  height: 385px;
+}
+
+@media screen and (max-width: 425px) {
+  .big__video {
+    width: 310px;
+    height: 233px;
+  }
 }
