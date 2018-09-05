@@ -80,6 +80,10 @@
   padding-top: 2px;
 }
 
+.image__section--description-a-y {
+  color: var(--k);
+}
+
 .image__section--image-m {
   width: 70%;
   float: left;
