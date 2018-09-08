@@ -68,16 +68,14 @@
 
   .image__nav--mobile-icon {
     width: 30px;
-    height: 30px;
-    padding: 9px 10px;
+    padding: 15px 10px;
     float: right;
   }
 
   .image__nav--mobile-top {
-    width: 50px;
-    height: 50px;
+    width: 30px;
     float: right;
-    margin-top: -1px;
+    margin: 6px;
   }
 
   .image__nav--mobile-list {
