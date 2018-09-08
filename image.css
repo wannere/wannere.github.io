@@ -59,21 +59,28 @@
   }
 
   .image__nav--mobile {
-    display: flex;
+    display: block;
     background-color: var(--k);
     height: 50px;
     position: fixed;
     width: 100%;
-    align-items: center;
+  }
+
+  .image__nav--mobile-icon {
+    width: 30px;
+    padding: 16px 10px;
+    float: right;
+  }
+
+  .image__nav--mobile-top {
+    width: 30px;
+    float: right;
+    margin: 6px;
   }
 
   .image__nav--mobile-button {
-    font-family: var(--serif);
-    color: white;
-    text-decoration: none;
-    font-style: italic;
-    font-size: 16px;
-    margin-left: 8px;
+    display: block;
+    float: left;
   }
 
   .image__nav--mobile-list {
