@@ -172,6 +172,7 @@
   justify-content: center;
   height: 50vw;
   float: left;
+  text-decoration: none;
 }
 
 .mainPage__section--blocks {
@@ -230,6 +231,7 @@
   align-items: center;
   height: 50vw;
   float: left;
+  text-decoration: none;
 }
 
 .mainPage__section-2-photos {
@@ -273,6 +275,7 @@
   align-items: center;
   height: 50vw;
   float: left;
+  text-decoration: none;
 }
 
 .mainPage--section-3-photos {
