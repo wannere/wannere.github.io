@@ -324,6 +324,13 @@
   padding: 30px;
 }
 
+.image__section--image-wrapper--two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+
 .loader__gif {
   width: 30%;
   height: 30%;
@@ -333,6 +340,12 @@
   width: 90%;
   object-fit: contain;
   height: auto;
+}
+
+.two {
+  width: 45%;
+  object-fit: contain;
+  height: 50%;
 }
 
 .big__video {
