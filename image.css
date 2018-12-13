@@ -145,6 +145,10 @@
   padding-top: 2px;
 }
 
+.image__section--description-a-c {
+  color: var(--white);
+}
+
 .image__section--description-y {
   background-color: var(--y);
   width: 30%;
