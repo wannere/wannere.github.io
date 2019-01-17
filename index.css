@@ -211,9 +211,9 @@
   transition: 0.4s;
 }
 
-.mainPage__section-1-photos__element:hover {
-  filter: none;
-  -webkit-filter: none;
+.mainPage__section-1:hover .mainPage__section-1-photos__element {
+    filter: none;
+    -webkit-filter: none;
 }
 
 .mainPage__section-2 {
@@ -255,7 +255,7 @@
   transition: 0.4s;
 }
 
-.mainPage__section-2-photos__element:hover {
+.mainPage__section-2:hover .mainPage__section-2-photos__element {
   filter: none;
   -webkit-filter: none;
 }
@@ -298,7 +298,7 @@
   transition: 0.4s;
 }
 
-.mainPage__section-3-photos__element:hover {
+.mainPage__section-3:hover .mainPage__section-3-photos__element {
   filter: none;
   -webkit-filter: none;
 }
