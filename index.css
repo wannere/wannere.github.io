@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 :root {
@@ -19,7 +20,6 @@
 .mainPage__header {
   width: 100%;
   display: block;
-  height:50vw;
 }
 
 .mainPage__portrait {
@@ -49,6 +49,14 @@
   }
 }
 
+.mainpage__about--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vw;
+
+}
+
 .mainPage__logo {
   width: 80%;
   margin: 0% 10% 0 10%;
@@ -58,14 +66,14 @@
   font-family: var(--sans);
   font-size: 14px;
   width: 80%;
-  margin: 8%;
+  margin: 0 8% 8% 8%;
   color: var(--black);
 }
 
 .mainPage__header--buttons {
   margin: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .mainPage__header--buttons__element {
@@ -73,10 +81,9 @@
   background-color: var(--white);
   color: var(--k);
   font-family: var(--sans);
-  border: 2px solid var(--grey);
-  border-radius: 5px;
+  border-bottom: 2px solid var(--k);
   font-size: 16px;
-  width: 30%;
+  width: 40%;
   transition: 0.4s;
   text-align: center;
   text-decoration: none;
@@ -86,7 +93,6 @@
 .mainPage__header--buttons__element:hover {
   background-color: var(--k);
   color: var(--white);
-  border: 2px solid var(--k);
 }
 
 @media screen and (max-width: 787px) {
