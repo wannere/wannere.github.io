@@ -20,6 +20,7 @@
 .mainPage__header {
   width: 100%;
   display: block;
+  height: 50vw;
 }
 
 .mainPage__portrait {
@@ -30,7 +31,6 @@
 .mainPage__header--block {
   width: 50%;
   float: left;
-  height: 50vw;
   display: flex;
   align-items: center
 }
