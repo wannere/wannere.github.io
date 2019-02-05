@@ -48,7 +48,7 @@
   }
 }
 
-.mainpage__about--text {
+.mainPage__about--text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -94,6 +94,11 @@
 }
 
 @media screen and (max-width: 787px) {
+  .mainPage__about--text {
+    height: 300px;
+    justify-content: flex-start;
+  }
+
   .mainPage__about--p {
     margin: 0 8% 0 8%;
     font-family: var(--sans);
@@ -104,7 +109,19 @@
 
   .mainPage__logo {
     width: 80%;
-    margin: -70% 10% 30% 10%;
+    margin: -50% 10% 30% 10%;
+  }
+}
+
+@media screen and (max-width: 717px) {
+  .mainPage__about--text {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .mainPage__about--text {
+    height: 450px;
   }
 }
 
