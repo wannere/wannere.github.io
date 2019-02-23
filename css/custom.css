@@ -1,0 +1,86 @@
+:root {
+  --accent: #92C47D;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.top {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  padding: 10px;
+  display: inline-block;
+  transition: none;
+  border-bottom: 1px solid #fff;
+
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #222;
+  color: #222;
+}
+
+.current {
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.middle {
+  margin: 0 1rem;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: bold;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid var(--accent);
+}
+
+.project {
+  margin-top: 2.5rem;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+}
+
+@media (min-width: 550px) {
+  .top {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav {
+    text-align: right;
+  }
+
+  .bio {
+    flex-direction: row;
+  }
+}
