@@ -55,9 +55,9 @@ h3 {
 .title {
   text-transform: uppercase;
   color: var(--accent);
-  font-weight: bold;
   margin: 1.5rem 0;
   border-bottom: 1px solid var(--accent);
+  font-size: 2.5rem;
 }
 
 .project {
