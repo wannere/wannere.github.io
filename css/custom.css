@@ -1,5 +1,6 @@
 :root {
   --accent: #92C47D;
+  scroll-behavior: smooth;
 }
 
 h3 {
@@ -71,7 +72,50 @@ h3 {
   padding-top: 25px;
 }
 
+.second-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #fff;
+  padding: 1rem 0 0 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 85%;
+  max-width: 1000px;
+}
+
+.item-wrapper {
+  flex-direction: column;
+  width:100%;
+  display: none;
+  padding: 0 0 1rem 0;
+}
+
+button {
+  padding: 0;
+}
+
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
 @media (min-width: 550px) {
+  .sticky {
+    width: inherit;
+  }
+
+  .item-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
   .top {
     flex-direction: row;
     align-items: center;
@@ -84,5 +128,27 @@ h3 {
   .bio {
     flex-direction: row;
     margin-top: 0;
+  }
+
+  .second-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem 0;
+  }
+
+  .nav-item {
+    padding-right: 1rem;
+  }
+
+  .header-wrapper {
+    height: 156px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 898px) {
+  .header-wrapper {
+    height: 110px;
+    width: 100%;
   }
 }

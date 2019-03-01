@@ -13,7 +13,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+  <!-- Font
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hamburger.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,23 +34,44 @@
   <meta name="msapplication-TileColor" content="#92C47D">
   <meta name="theme-color" content="#92C47D">
 
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="projects.js"></script>
+
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row top">
-      <h3 class="four columns"><span class="accent">Emily</span> Wanner</h3>
-      <div class="nav eight columns">
-        <a class="nav-link" href="index.html">about</a>
-        <p class="nav-link current middle">projects</p>
-        <a class="nav-link" href="https://www.dropbox.com/s/8evnb8hjj7hyg32/ResumeEmilyWanner.pdf?raw=1">resume</a>
+    <div class="header-wrapper">
+      <div class="row top">
+        <h3 class="four columns"><span class="accent">Emily</span> Wanner</h3>
+        <div class="nav eight columns">
+          <a class="nav-link" href="index.html">about</a>
+          <p class="nav-link current middle">projects</p>
+          <a class="nav-link" href="https://www.dropbox.com/s/8evnb8hjj7hyg32/ResumeEmilyWanner.pdf?raw=1">resume</a>
+        </div>
+      </div>
+      <div class="row second-nav" id="navbar">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="item-wrapper">
+          <a href="#typography" class="nav-item">typography</a>
+          <a href="#branding" class="nav-item">branding</a>
+          <a href="#webdesign" class="nav-item">web design</a>
+          <a href="#illustration" class="nav-item">illustration</a>
+          <a href="#animation" class="nav-item">animation</a>
+        </div>
       </div>
     </div>
 <!--TYPOGRAPHY
 ——————————————————————————————————————————————————— -->
-    <div class="row title">typography</div>
+    <div class="row title" id="typography">typography</div>
     <div class="row project">
       <div class="four columns">
         <h5>REM Poster</h5>
@@ -72,7 +94,7 @@
     </div>
 <!--BRANDING
 —————————————————————————————————————————————————————————————-->
-    <div class="row title">branding</div>
+    <div class="row title" id="branding">branding</div>
     <div class="row project">
       <div class="four columns">
         <h5>Tarpoon Lagoon Dive Center</h5>
@@ -93,7 +115,7 @@
     </div>
 <!--WEB DESIGN
 —————————————————————————————————————————————————————————————-->
-    <div class="row title">web design</div>
+    <div class="row title" id="webdesign">web design</div>
     <div class="row project">
       <div class="four columns">
         <h5>White Salmon Website Redesign</h5>
@@ -105,7 +127,7 @@
     </div>
 <!--ILLUSTRATION
 —————————————————————————————————————————————————————————————-->
-    <div class="row title">illustration</div>
+    <div class="row title" id="illustration">illustration</div>
     <div class="row project">
       <div class="four columns">
         <h5>Housing Icons</h5>
@@ -155,7 +177,7 @@
     </div>
 <!--ANIMATION
 —————————————————————————————————————————————————————————————-->
-    <div class="row title">animation</div>
+    <div class="row title" id="animation">animation</div>
     <div class="row project">
       <div class="four columns">
         <h5>Cipe Pineles Designer Promo</h5>
