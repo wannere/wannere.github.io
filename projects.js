@@ -1,10 +1,9 @@
 $(document).ready(function(){
   var yourNavigation = $(".second-nav");
       stickyDiv = "sticky";
-      yourHeader = $('.top').height();
 
   $(window).scroll(function(){
-    if( $(this).scrollTop() > yourHeader ) {
+    if( $(this).scrollTop() > 91 ) {
     yourNavigation.addClass(stickyDiv);
     adjustWidth();
     }
@@ -19,15 +18,17 @@ $(document).ready(function(){
   $(".hamburger").click(function(){
     $(".hamburger").toggleClass("is-active");
     $(".item-wrapper").slideToggle('fast').css("display", "flex");
+    $(".overlay").fadeToggle('fast');
   });
   $(".nav-item").click(function(){
     $(".hamburger").toggleClass("is-active");
     $(".item-wrapper").slideToggle('fast').css("display", "flex");
+    $(".overlay").fadeToggle('fast');
   });
   $(window).resize(function(){
     adjustWidth();
     if($(window).width() > 550) {
-      $(".item-wrapper").css("display", "flex");
+      $(".item-wrapper").css("display", "none");
     };
   });
 });
