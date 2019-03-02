@@ -23,7 +23,9 @@ $(document).ready(function(){
   $(".nav-item").click(function(){
     $(".hamburger").toggleClass("is-active");
     $(".item-wrapper").slideToggle('fast').css("display", "flex");
-    $(".overlay").fadeToggle('fast');
+    if((window).width() < 550 ) {
+      $(".overlay").fadeToggle('fast');
+    }
   });
   $(window).resize(function(){
     adjustWidth();

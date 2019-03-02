@@ -154,6 +154,10 @@ button {
     display: none;
   }
 
+  .overlay {
+    display: none;
+  }
+
   .bio-img{
     padding-top:0;
   }
