@@ -23,9 +23,10 @@ $(document).ready(function(){
   $(".nav-item").click(function(){
     $(".hamburger").toggleClass("is-active");
     $(".item-wrapper").slideToggle('fast').css("display", "flex");
-    if((window).width() < 550 ) {
+    if($(window).width() < 550 ) {
       $(".overlay").fadeToggle('fast');
-    }
+      $(".overlay").css("display", "none");
+    };
   });
   $(window).resize(function(){
     adjustWidth();
