@@ -18,14 +18,16 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/ts_skeleton.css">
-  <link rel="stylesheet" href="css/tamamshud.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/ts_skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/tamamshud.css">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css">
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="tamamshud.js"></script>
+  <script type="text/javascript" src="tamamshud.js"></script>
+  <script type="text/javascript" src="fullpage.js"></script>
 
 </head>
 <body>
@@ -34,7 +36,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="nav">
     <ul>
-      <li><a href="#"><img src="images/top.png" id="top-button"></a></li>
+      <li><a href="#top"><img src="images/top.png" id="top-button"></a></li>
       <li><a href="#body">I.</a></li>
       <li><a href="#suitcase">II.</a></li>
       <li><a href="#rubaiyat">III.</a></li>
@@ -45,7 +47,7 @@
 
   <!-- Intro
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+  <div class="container" id="fullpage">
     <div class="section top">
       <div class="twelve columns"><h1 id="title">Tamám Shud</h1></div>
       <div class="twelve columns">
@@ -62,8 +64,7 @@
 
     <!-- I. The Body
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section twelve columns" id="body">
-      <div class="fade">
+    <div class="section twelve columns">
         <div class="one-half column">
           <h1>I. The Body</h1>
           <p><span class="accent">1948</span><br/><span class="accent">Adelaide, South Australia</span></p>
@@ -75,13 +76,11 @@
         <div class="one-half column">
           <img src="images/img_body.png" class="u-max-full-width">
         </div>
-      </div>
     </div>
 
     <!-- II. The Suitcase
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section twelve columns" id="suitcase">
-      <div class="fade">
+    <div class="section twelve columns">
         <div class="one-half column img-desktop">
           <img src="images/img_suitcase.png" class="u-max-full-width">
         </div>
@@ -94,13 +93,11 @@
         <div class="one-half column img-mobile">
           <img src="images/img_suitcase.png" class="u-max-full-width">
         </div>
-      </div>
     </div>
 
     <!-- III. The Rubaiyat
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section twelve columns" id="rubaiyat">
-      <div class="fade">
+    <div class="section twelve columns">
         <div class="one-half column">
           <h1>III. The Rubaiyat</h1>
           <p>In April 1949, another examination of the man’s body and possessions produced a mystifying clue. In a small pocket sewn into the waistband of his trousers was a small scrap of paper typeset with the words “Tamám Shud”. The words were traced back to a book of 12th century Persian poetry called The Rubaiyat of Omar Khayyam. Though a rare book, it had become popular in Australia through a translation by Edward Fitzgerald. Police inquiries into libraries, publishers, and bookstores failed to find an edition the used the same type as the paper found in the man’s pocket; but the words were confirmed to have come from the book. <span class="accent">They were the last words in most English translations, meaning “finished” or “it is ended”.</span></p>
@@ -112,13 +109,11 @@
           <p id="second">Adelaide police were unable to crack the meaning of the letters, so it was sent to Naval Intelligence and published in the press. Amateur codebreakers didn’t succeed, and Naval Intelligence was similarly lost. Their only assertion was that the letters corresponded to the frequency of initial letters of words in English and that a reasonable explanation might be that the lines were initial letters of words in a sentence or verse.</p>
           <p>The edition of the book itself was from a New Zealand publisher. <span class="accent">It is so rare that an identical copy has never been found.</span></p>
         </div>
-      </div>
     </div>
 
     <!-- IV. The Woman
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section twelve columns" id="woman">
-      <div class="fade">
+    <div class="section twelve columns">
         <div class="one-half column img-desktop">
           <img src="images/img_woman.png" class="u-max-full-width">
         </div>
@@ -132,14 +127,12 @@
         <div class="one-half column img-mobile">
           <img src="images/img_woman.png" class="u-max-full-width">
         </div>
-      </div>
     </div>
 
 
     <!-- V. The End
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section twelve columns" id="end">
-      <div class="fade">
+    <div class="section twelve columns">
         <div class="one-half column">
           <h1>V. The End</h1>
           <p>In over 70 years since the Somerton Man’s death (as he came to be known), the mystery of his identity, his death, and his connection to Jessica Thomson and The Rubaiyat have inspired much speculation and many theories.</p>
@@ -149,7 +142,6 @@
         <div class="one-half column">
           <img src="images/img_end.png" class="u-max-full-width">
         </div>
-      </div>
     </div>
 
   </div>
