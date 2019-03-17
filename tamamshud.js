@@ -14,4 +14,8 @@ $(document).ready(function(){
     var src = $(this).attr("src").replace("_hover.png", ".png");
     $(this).attr("src", src);
   });
+  $("img").tilt();
+  $(".js-tilt").tilt({
+    speed:400
+  });
 });
