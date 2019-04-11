@@ -28,6 +28,8 @@ h3 {
   text-transform: uppercase;
   font-size: 12px;
   font-feature-settings: "lnum" on;
+  -webkit-font-feature-settings: "lnum" on;
+  -moz-font-feature-settings: "lnum" on;
 }
 
 .num {
