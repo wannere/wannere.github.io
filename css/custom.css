@@ -181,6 +181,12 @@ button {
   z-index: 3;
 }
 
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 .desktop-header {
   display: none;
 }
@@ -239,7 +245,7 @@ button {
 
   .bio {
     flex-direction: row;
-    margin-top: 0;
+    margin-top: 5rem;
   }
 
   .second-nav {
