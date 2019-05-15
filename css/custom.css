@@ -41,7 +41,7 @@ h3 {
 }
 
 .subtitle {
-  font-family: Futura, "Muli", Helvetica, sans-serif;
+  font-family: "Josefin Sans", "Muli", Helvetica, sans-serif;
   margin-bottom: 0;
   text-align: left;
   font-size: 1.8rem;
@@ -122,6 +122,11 @@ h3 {
   width: 100%;
   text-align: center;
   padding-top: 25px;
+  text-transform: uppercase;
+  font-feature-settings: "lnum" on;
+  -webkit-font-feature-settings: "lnum" on;
+  -moz-font-feature-settings: "lnum" on;
+  font-size: .9rem;
 }
 
 .mobile-header {
