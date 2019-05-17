@@ -40,6 +40,25 @@ h3 {
   color: var(--accent);
 }
 
+.subtitle {
+  font-family: "Josefin Sans", "Muli", Helvetica, sans-serif;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1.8rem;
+  letter-spacing: .2rem;
+}
+
+.subsubtitle {
+  font-size: 1.3rem;
+  font-feature-settings: "lnum" on;
+  text-align: left;
+}
+
+.job {
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+
 .top {
   margin-top: 25px;
   display: flex;
@@ -56,7 +75,7 @@ h3 {
   color: #222;
   padding: 10px;
   display: inline-block;
-  transition: none;
+  transition: 0.2s;
   border-bottom: 1px solid #fff;
 
 }
@@ -103,6 +122,11 @@ h3 {
   width: 100%;
   text-align: center;
   padding-top: 25px;
+  text-transform: uppercase;
+  font-feature-settings: "lnum" on;
+  -webkit-font-feature-settings: "lnum" on;
+  -moz-font-feature-settings: "lnum" on;
+  font-size: .9rem;
 }
 
 .mobile-header {
@@ -129,7 +153,7 @@ h3 {
   flex-direction: column;
   width:100%;
   display: none;
-  height: 270px;
+  height: 150px;
 }
 
 button {
@@ -157,6 +181,12 @@ button {
   z-index: 3;
 }
 
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 .desktop-header {
   display: none;
 }
@@ -168,6 +198,18 @@ button {
 @media (min-width: 550px) {
   .mobile-header {
     display: none;
+  }
+
+  .subtitle, .subsubtitle {
+    text-align: right;
+  }
+
+  .subtitle {
+    padding-top:3px;
+  }
+
+  .subsubtitle {
+    padding-top: 2px;
   }
 
   .overlay {
@@ -195,7 +237,6 @@ button {
 
   .top {
     flex-direction: row;
-    align-items: center;
   }
 
   .nav {
@@ -204,7 +245,7 @@ button {
 
   .bio {
     flex-direction: row;
-    margin-top: 0;
+    margin-top: 5rem;
   }
 
   .second-nav {
@@ -217,15 +258,18 @@ button {
     padding-right: 1rem;
   }
 
-  .desktop-header {
-    height: 156px;
-    width: 100%;
+  .logo {
+    width: 55%;
+    padding-top: 10px;
   }
 }
 
 @media (min-width: 898px) {
   .desktop-header {
-    height: 110px;
     width: 100%;
+  }
+
+  .logo {
+    width: 45%
   }
 }
