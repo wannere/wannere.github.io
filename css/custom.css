@@ -222,6 +222,7 @@ button {
 
   .desktop-header {
     display: block;
+    margin-bottom: 4rem;
   }
 
   .sticky {
@@ -245,7 +246,43 @@ button {
 
   .bio {
     flex-direction: row;
-    margin-top: 5rem;
+  }
+
+  .work {
+    margin-top: 2.5vw;
+  }
+
+  .piece {
+    position: relative;
+  }
+
+  .piece-caption {
+    font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .small-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .piece:hover {
+    .small-overlay {
+      opacity: 1;
+    }
   }
 
   .second-nav {
