@@ -80,13 +80,32 @@ h3 {
 
 }
 
+.nav-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  transition: .2s ease;
+}
+
+.current:after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
 .nav-link:hover {
-  border-bottom: 1px solid #222;
   color: #222;
 }
 
 .current {
-  border-bottom: 1px solid #222;
   cursor: pointer;
   margin-bottom: 0;
 }
@@ -256,11 +275,19 @@ button {
     position: relative;
   }
 
-  .piece-caption {
+  .caption {
     font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.5rem;
-    color: #ffffff;
-    margin: 0;
+    color: rgba(255,255,255,0);
+    margin: 0 0 2rem 2rem;
+  }
+
+  .caption:after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 1px solid white;
+    transition: .2s ease;
   }
 
   .small-overlay {
@@ -271,18 +298,23 @@ button {
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
-    transition: 0.2s ease;
-    background-color: var(--accent);
+    transition: 0.3s;
+    background-color: rgba(0,0,0,0);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
   }
 
-  .piece:hover {
-    .small-overlay {
-      opacity: 1;
-    }
+  .small-overlay:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .small-overlay:hover .caption {
+    color: rgba(255,255,255, 1);
+  }
+
+  .small-overlay:hover .caption:after {
+    width: 100%;
   }
 
   .second-nav {
