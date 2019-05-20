@@ -378,6 +378,9 @@ form {
   margin-right: auto; }
 .u-text-center {
   text-align: center !important; }
+.u-margin-bottom {
+  margin-bottom:3rem;
+}
 
 
 /* Misc
