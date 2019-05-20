@@ -196,6 +196,17 @@ button {
   z-index: 3;
 }
 
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
 .desktop-header {
   display: none;
 }

@@ -159,10 +159,10 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #92C47D;
+  color: #575757;
   transition: 0.2s; }
 a:hover {
-  color: #85B372; }
+  color: #000000; }
 
 
 /* Buttons
@@ -379,8 +379,9 @@ form {
 .u-text-center {
   text-align: center !important; }
 .u-margin-bottom {
-  margin-bottom:3rem;
-}
+  margin-bottom:3rem;}
+.u-margin-top {
+  margin-top:3rem;}
 
 
 /* Misc
