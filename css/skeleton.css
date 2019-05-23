@@ -361,7 +361,7 @@ form {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
+full-width {
   width: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
@@ -382,6 +382,8 @@ form {
   margin-bottom:3rem;}
 .u-margin-top {
   margin-top:3rem;}
+.u-text-none {
+  text-decoration:none;}
 
 
 /* Misc
