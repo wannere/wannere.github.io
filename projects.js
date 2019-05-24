@@ -1,16 +1,4 @@
 $(document).ready(function(){
-  var yourNavigation = $(".second-nav");
-      stickyDiv = "sticky";
-
-  $(window).scroll(function(){
-    if( $(this).scrollTop() > 91 ) {
-    yourNavigation.addClass(stickyDiv);
-    adjustWidth();
-    }
-    else {
-    yourNavigation.removeClass(stickyDiv);
-    }
-  });
   function adjustWidth() {
      var parentwidth = $(".container").width();
      $(".second-nav").width(parentwidth);

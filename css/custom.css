@@ -20,10 +20,6 @@
   display: block;
 }
 
-h3 {
-  font-weight: bold;
-}
-
 .range {
   text-transform: uppercase;
   font-size: 12px;
@@ -80,30 +76,39 @@ h3 {
 
 }
 
+.nav-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  transition: .2s ease;
+}
+
+.current:after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
 .nav-link:hover {
-  border-bottom: 1px solid #222;
   color: #222;
+  background-color: #ffffff;
 }
 
 .current {
-  border-bottom: 1px solid #222;
   cursor: pointer;
   margin-bottom: 0;
 }
 
 .middle {
   margin: 0 1rem;
-}
-
-.bio {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 25px;
-}
-
-.bio-img {
-  padding-top: 3rem;
 }
 
 .title {
@@ -153,7 +158,7 @@ h3 {
   flex-direction: column;
   width:100%;
   display: none;
-  height: 150px;
+  height: 170px;
 }
 
 button {
@@ -181,10 +186,16 @@ button {
   z-index: 3;
 }
 
-.fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  margin-bottom: 2rem;
+  text-align: right;
 }
 
 .desktop-header {
@@ -193,6 +204,25 @@ button {
 
 .id {
   height: 58px;
+}
+
+.caption {
+  font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+  margin: 2rem 2rem 1rem 1rem;
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+}
+
+.first {
+  margin-top: 50px;
+}
+
+h3, h4 {
+  font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4 {
+  margin-top: 2rem;
 }
 
 @media (min-width: 550px) {
@@ -204,6 +234,16 @@ button {
     text-align: right;
   }
 
+  .first {
+    margin: auto;
+  }
+
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
   .subtitle {
     padding-top:3px;
   }
@@ -212,16 +252,17 @@ button {
     padding-top: 2px;
   }
 
+  .head {
+    flex-direction: row;
+  }
+
   .overlay {
     display: none;
   }
 
-  .bio-img{
-    padding-top:0;
-  }
-
   .desktop-header {
     display: block;
+    margin-bottom: 4rem;
   }
 
   .sticky {
@@ -243,9 +284,53 @@ button {
     text-align: right;
   }
 
-  .bio {
-    flex-direction: row;
-    margin-top: 5rem;
+  .work {
+    margin-top: 2.5vw;
+  }
+
+  .piece {
+    position: relative;
+  }
+
+  .caption {
+    color: rgba(255,255,255,0);
+    font-size: 2.5rem;
+    margin: 0 0 2rem 2rem;
+  }
+
+  .caption:after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 1px solid white;
+    transition: .3s ease;
+  }
+
+  .small-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .small-overlay:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .small-overlay:hover .caption {
+    color: rgba(255,255,255, 1);
+  }
+
+  .small-overlay:hover .caption:after {
+    width: 100%;
   }
 
   .second-nav {
