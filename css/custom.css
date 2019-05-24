@@ -99,6 +99,7 @@
 
 .nav-link:hover {
   color: #222;
+  background-color: #ffffff;
 }
 
 .current {
@@ -108,17 +109,6 @@
 
 .middle {
   margin: 0 1rem;
-}
-
-.bio {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 25px;
-}
-
-.bio-img {
-  padding-top: 3rem;
 }
 
 .title {
@@ -270,10 +260,6 @@ h4 {
     display: none;
   }
 
-  .bio-img{
-    padding-top:0;
-  }
-
   .desktop-header {
     display: block;
     margin-bottom: 4rem;
@@ -296,10 +282,6 @@ h4 {
 
   .nav {
     text-align: right;
-  }
-
-  .bio {
-    flex-direction: row;
   }
 
   .work {
