@@ -388,8 +388,10 @@ full-width {
 .u-flex-row {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
+.u-half-size {
+  width: 50%;
+  margin:0 25%;}
 
 @media (min-width: 550px) {
   .u-flex-row {
