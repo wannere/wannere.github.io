@@ -40,6 +40,19 @@
   letter-spacing: .2rem;
 }
 
+.big-link {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 .5rem;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.big-link:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .subsubtitle {
   font-size: 1.3rem;
   font-feature-settings: "lnum" on;
