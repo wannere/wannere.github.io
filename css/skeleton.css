@@ -407,9 +407,6 @@ full-width {
   display: flex;
   flex-direction: column;
   align-items: center; }
-.u-flex-row-bottom {
-  display: flex;
-  flex-direction: column;}
 .u-half-size {
   width: 50%;
   margin:0 25%;}
@@ -418,10 +415,6 @@ full-width {
   .u-flex-row {
     flex-direction: row;
   }
-  .u-flex-row-bottom {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end; }
 }
 
 
