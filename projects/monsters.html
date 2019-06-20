@@ -28,6 +28,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
   <!-- CSS
@@ -84,25 +85,25 @@
       </div>
     </div>
     <div class="row first head">
-      <div class="eight columns">
+      <div data-aos="fade-right" data-aos-duration="120" class="eight columns">
         <h3>The Modern Monster Concept Art</h3>
       </div>
-      <div class="four columns link">
+      <div data-aos="fade-left" data-aos-duration="120" class="four columns link">
         <a class="u-text-none" href="chaparral.html"><i class="fas fa-arrow-left"></i> Chaparral Type Specimen</a><br/>
         <a class="u-text-none" href="icons.html">Icons & GIFs <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
     <div class="row">
-      <div class="twelve columns">
+      <div data-aos="fade-right" data-aos-duration="120" class="twelve columns">
         <img class="u-max-full-width" src="../images/monsters/monsters.jpg">
       </div>
     </div>
     <div class="row u-flex-row">
-      <div class="six columns">
+      <div data-aos="fade-right" data-aos-duration="120" class="six columns">
         <p>This project was for an English class based around comic books. I had to create a prototype for an art comic. My comic idea, called The Modern Monster, is centered around four young women in a world where everyone is a monster instead of a human. The comic is meant as a slice of life for the modern young woman that would give advice on issues ranging from recognizing emotional abuse in relationships to making friends in college.</p>
         <p class="u-text-right">The four main characters pictured on this character sheet are Regan O'Connor, a demon, Samera Williams, a ghost, Valentine "V" Wu, a succubus, and Lily Simons, a swamp monster. I also designed the title for the comic, and hope to be able to produce a full issue as a passion project.</p>
       </div>
-      <div class="six columns">
+      <div data-aos="fade-left" data-aos-duration="120" class="six columns">
         <img class="u-max-full-width" src="../images/monsters/monster3.jpg">
       </div>
     </div>
@@ -110,4 +111,10 @@
       <p>&copy; Emily Wanner 2019 / designed and developed by Emily Wanner</p>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
 </html>
