@@ -410,6 +410,10 @@ full-width {
   display: flex;
   flex-direction: column;
   align-items: center; }
+.u-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 .u-half-size {
   width: 50%;
   margin:0 25%;}
