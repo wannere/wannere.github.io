@@ -325,7 +325,6 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
-
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
@@ -417,6 +416,8 @@ full-width {
 .u-half-size {
   width: 50%;
   margin:0 25%;}
+.u-josefin {
+  font-family: 'Josefin Sans'; }
 
 @media (min-width: 550px) {
   .u-flex-row {
