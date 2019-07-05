@@ -325,7 +325,6 @@ ol ul {
 li {
   margin-bottom: 1rem; }
 
-
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
@@ -410,9 +409,21 @@ full-width {
   display: flex;
   flex-direction: column;
   align-items: center; }
+.u-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 .u-half-size {
   width: 50%;
   margin:0 25%;}
+.u-half-width {
+  width: 45%;
+  margin-top: 20%}
+.u-josefin {
+  font-family: 'Josefin Sans'; }
+.u-margin-none {
+  margin: 0;
+}
 
 @media (min-width: 550px) {
   .u-flex-row {
