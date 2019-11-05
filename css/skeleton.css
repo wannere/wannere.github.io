@@ -214,14 +214,6 @@ input[type="button"]:hover {
   cursor: pointer;
   color: #ffffff;
   outline: 0; }
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #ffffff;
-  background-color: #000;
-}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
