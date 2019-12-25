@@ -175,6 +175,7 @@ input[type="button"] {
   height: 38px;
   padding: 1px 30px 0 30px;
   color: #000;
+  background-color: var(--accent);
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -183,8 +184,6 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
-  border-bottom: 1px solid #000;
   cursor: pointer;
   box-sizing: border-box;
   z-index: 1;
@@ -197,7 +196,7 @@ input[type="button"] {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--accent);
+  background-color: #000;
   transform-origin: center left;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
@@ -212,8 +211,8 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
   cursor: pointer;
-  color: #000;
-  outline: 0; }
+  color: #fff;
+  outline: 0;}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -351,8 +350,7 @@ td:last-child {
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
-.button {
-  margin-bottom: 1rem; }
+.button {}
 input,
 textarea,
 select,
