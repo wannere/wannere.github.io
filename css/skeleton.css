@@ -197,7 +197,7 @@ input[type="button"] {
   left: 0;
   right: 0;
   background-color: #000;
-  transform-origin: center left;
+  transform-origin: center right;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
 }
