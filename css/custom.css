@@ -45,9 +45,9 @@ h5 {
   font-family: "IBM Plex Mono";
   margin-bottom: 0;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   letter-spacing: .2rem;
-  font-weight:700;
+  font-weight:600;
 }
 
 .big-link {
@@ -67,11 +67,16 @@ h5 {
   font-size: 1.3rem;
   font-feature-settings: "lnum" on;
   text-align: left;
+  line-height: 1.9rem;
+}
+
+.courses {
+  display: none;
 }
 
 .job {
   font-size: 1.9rem;
-  margin-bottom: 0;
+  margin-bottom: 8px;;
   font-family: 'IBM Plex Mono';
   font-weight: 600;
 }
@@ -277,7 +282,7 @@ h4 {
   }
 
   .subsubtitle {
-    padding-top: 2px;
+    padding-top: 7px;
   }
 
   .head {
