@@ -1,5 +1,10 @@
 :root {
   scroll-behavior: smooth;
+  --accent: #FFE439;
+}
+
+h5 {
+  margin-bottom: 0;
 }
 
 .overlay {
@@ -19,6 +24,11 @@
   display: block;
 }
 
+.highlight {
+  background-color: var(--accent);
+  padding-left: 10px;
+}
+
 .range {
   text-transform: uppercase;
   font-size: 12px;
@@ -32,12 +42,12 @@
 }
 
 .subtitle {
-  font-family: "Josefin Sans";
+  font-family: "IBM Plex Mono";
   margin-bottom: 0;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   letter-spacing: .2rem;
-  font-weight:700;
+  font-weight:600;
 }
 
 .big-link {
@@ -49,7 +59,7 @@
 }
 
 .big-link:hover {
-  background-color: #ffffff;
+  background-color: var(--accent);
   color: #000000;
 }
 
@@ -57,12 +67,17 @@
   font-size: 1.3rem;
   font-feature-settings: "lnum" on;
   text-align: left;
+  line-height: 1.9rem;
+}
+
+.courses {
+  display: none;
 }
 
 .job {
   font-size: 1.9rem;
-  margin-bottom: 0;
-  font-family: 'Raleway';
+  margin-bottom: 8px;;
+  font-family: 'IBM Plex Mono';
   font-weight: 600;
 }
 
@@ -91,39 +106,39 @@
   padding: 10px;
   display: inline-block;
   transition: 0.2s;
-  border-bottom: 1px solid #fff;
   text-transform: uppercase;
+  position: relative;
 }
 
-.nav-link:after {
+.nav-link::before {
   content: "";
-  display: block;
-  width: 0;
-  padding-top: 10px;
-  border-bottom: 1px solid black;
-  transition: .2s ease;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--accent);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.nav-link:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+.current {
+  cursor: pointer;
+  margin-bottom: 0;
+  background-color: var(--accent);
 }
 
 .current:after {
   content: "";
   display: block;
   width: 100%;
-  padding-top: 10px;
-  border-bottom: 1px solid black;
-}
-
-.nav-link:hover:after {
-  width: 100%;
-}
-
-.nav-link:hover {
-  color: #222;
-  background-color: #ffffff;
-}
-
-.current {
-  cursor: pointer;
-  margin-bottom: 0;
 }
 
 .title {
@@ -135,14 +150,20 @@
 }
 
 .footer {
-  width: 100%;
+  width: 100vw;
   text-align: center;
-  padding-top: 25px;
+  margin-top: 25px;
+  padding: 25px 0;
   text-transform: uppercase;
   font-feature-settings: "lnum" on;
   -webkit-font-feature-settings: "lnum" on;
   -moz-font-feature-settings: "lnum" on;
   font-size: .9rem;
+  background-color: #f1f1f1;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
 
 .mobile-header {
@@ -162,6 +183,7 @@
   width:100%;
   display: none;
   height: 170px;
+  justify-content: space-evenly;
 }
 
 button {
@@ -176,20 +198,39 @@ button {
 }
 
 .header-wrapper {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
+  right:0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: flex-end;
   background-color: #fff;
-  padding: 2rem 2rem 0 2rem;
+  padding: 1rem 2rem 0 2rem;
   box-sizing: border-box;
   z-index: 3;
   -webkit-box-shadow: 0px -10px 38px 0px rgba(85,85,85,0.56);
   -moz-box-shadow: 0px -10px 38px 0px rgba(85,85,85,0.56);
   box-shadow: 0px -10px 38px 0px rgba(85,85,85,0.56);
+}
+
+.header_topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.header_line {
+  border-bottom: 1px solid #f1f1f1;
+  display: none;
+  transition: 0.2s ease;
+}
+
+.menu {
+  font-size: 35px;
 }
 
 .head {
@@ -204,26 +245,59 @@ button {
   text-align: right;
 }
 
+.scroll-link {
+  color: #222;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: 0.2s;
+  position: relative;
+}
+
+.scroll-link::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--accent);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.scroll-link:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
 .desktop-header {
   display: none;
 }
 
 .caption {
-  font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
   padding: 2rem;
-  color: #fff;
+  color: #000;
   font-size: 1.5rem;
   text-decoration: none;
-  background-color: #000;
+  background-color: var(--accent);
+}
 
+.name {
+  text-decoration: none;
+  color: #000;
+  font-size: 2.4rem;
+  text-transform: uppercase;
 }
 
 .first {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
 }
 
 h4 {
@@ -256,7 +330,7 @@ h4 {
   }
 
   .subsubtitle {
-    padding-top: 2px;
+    padding-top: 7px;
   }
 
   .head {
@@ -285,6 +359,7 @@ h4 {
 
   .top {
     flex-direction: row;
+    align-items: center;
   }
 
   .piece {
@@ -292,27 +367,20 @@ h4 {
   }
 
   .caption {
-    font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
     color: rgba(255,255,255,0);
     font-size: 2.5rem;
     margin: 0 0 1rem 1rem;
     background-color: transparent;
+    transition: 0.4s;
   }
 
   .small-caption {
-    font-family: 'Josefin Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
     color: rgba(255,255,255,0);
     font-size: 1.5rem;
     margin: 0 0 1rem 1rem;
     background-color: transparent;
-    transition: .3s ease;
-  }
-
-  .caption:after {
-    content: "";
-    display: block;
-    width: 0;
-    border-bottom: 1px solid white;
     transition: .3s ease;
   }
 
@@ -325,15 +393,31 @@ h4 {
     height: 100%;
     width: 100%;
     transition: 0.2s;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(34,34,34,0);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
     z-index: 2;
+    transition: 0.2s;
   }
 
-  .small-overlay:hover {
-    background-color: rgba(0,0,0,0.6);
+  .small-overlay::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .small-overlay:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
   }
 
   .small-overlay:hover .caption {
