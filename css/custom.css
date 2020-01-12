@@ -153,6 +153,7 @@ h5 {
   width: 100vw;
   text-align: center;
   margin-top: 25px;
+  margin-bottom: 0;
   padding: 25px 0;
   text-transform: uppercase;
   font-feature-settings: "lnum" on;
@@ -186,8 +187,8 @@ h5 {
   justify-content: space-evenly;
 }
 
-button {
-  padding: 0 0 1rem 0;
+.button {
+  margin: 0 0 1rem 0;
 }
 
 .nav-item {
@@ -335,6 +336,12 @@ h4 {
 
   .head {
     flex-direction: row;
+  }
+
+  .button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .overlay {
