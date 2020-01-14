@@ -154,13 +154,14 @@ h5 {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 0;
-  padding: 25px 0;
+  padding: 25px 50px;
   text-transform: uppercase;
   font-feature-settings: "lnum" on;
   -webkit-font-feature-settings: "lnum" on;
   -moz-font-feature-settings: "lnum" on;
   font-size: .9rem;
   background-color: #f1f1f1;
+  box-sizing: border-box;
 }
 
 .footer p {
