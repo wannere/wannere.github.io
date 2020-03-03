@@ -311,6 +311,14 @@ h4 {
     display: none;
   }
 
+  .spacer {
+    margin-bottom: 100px;
+  }
+
+  .full {
+    height: 75vh;
+  }
+
   .download {
     margin-top: -30px;
   }
