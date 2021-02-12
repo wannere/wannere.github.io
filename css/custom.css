@@ -67,7 +67,8 @@ h5 {
   font-size: 1.3rem;
   font-feature-settings: "lnum" on;
   text-align: left;
-  line-height: 1.9rem;
+  line-height: 1rem;
+  margin-bottom: 5px;
 }
 
 .courses {
@@ -86,7 +87,7 @@ h5 {
 }
 
 .jobsub {
-  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .top {
@@ -284,6 +285,7 @@ h5 {
   color: #000;
   font-size: 1.5rem;
   text-decoration: none;
+  font-style: italic;
   background-color: var(--accent);
 }
 
@@ -300,6 +302,8 @@ h5 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
+  text-transform: inherit;
+  font-style: italic;
 }
 
 h4 {
@@ -340,7 +344,8 @@ h4 {
   }
 
   .subsubtitle {
-    padding-top: 7px;
+    padding-top: 12px;
+    margin-bottom: 25px;
   }
 
   .head {
