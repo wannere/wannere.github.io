@@ -395,7 +395,7 @@ full-width {
 .u-margin-bottom {
   margin-bottom:3rem;}
 .u-margin-top {
-  margin-top:3rem;}
+  margin-top:10rem;}
 .u-text-none {
   text-decoration:none;}
 .u-flex-row {
@@ -413,8 +413,11 @@ full-width {
   width: 45%;
   margin-top: 20%}
 .u-margin-none {
-  margin: 0;
-}
+  margin: 0; }
+.u-flex-row-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
 
 @media (min-width: 550px) {
   .u-flex-row {
