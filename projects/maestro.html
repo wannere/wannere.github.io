@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132560264-1"></script>
   <script>
@@ -25,286 +26,281 @@
   <!-- Font
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="../css/custom.css">
-  <link rel="stylesheet" href="../css/hamburger.css">
+  <style>a {text-decoration: none;}</style>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffe439">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#ffe439">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- JQuery
+  <!-- Script
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../projects.js"></script>
 
 </head>
 <body>
-  <div class="overlay"></div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="desktop-header">
-      <div class="row top">
-        <a href="../index.html" class="four columns name">August Wanner</a>
-        <div class="u-text-right eight columns">
-          <a class="nav-link current" href="../index.html">work</a>
-          <a class="nav-link middle" href="../about.html">about</a>
-          <a class="nav-link" href="../resume.html">resume</a>
+    <div class="header">
+      <div class="header_container">
+        <div class="title_container">
+          <a href="../index.html" id="name">August Wanner</a>
+          <span class="material-symbols-outlined menu">menu</span>
+        </div>
+        <div class="dropdown_container">
+          <div class="header_line"></div>
+          <a href="../index.html" class=" head_link head_active head_work">Work</a>
+          <a href="../resume.html" class="head_link">Resume</a>
         </div>
       </div>
     </div>
-    <div class="mobile-header">
-      <div class="header-wrapper">
-        <div class="header_topRow">
-          <a href="../index.html" class="name">August Wanner</a>
-          <i class="fas fa-bars menu"></i>
+    <!-- Title & Nav -->
+    <div class="container">
+      <div class="row u-margin-bottom">
+        <div class="ten columns project_title u-flex-row">
+          <span class="material-symbols-outlined icon big">add</span>
+          <h1 class="d-margin-none">Maestro App</h1>
         </div>
-        <div class="header_line"></div>
-        <div class="item-wrapper">
-          <a class="nav-link current" href="../index.html">WORK</a>
-          <a class="nav-link" href="../about.html">ABOUT</a>
-          <a class="nav-link" href="../resume.html">RESUME</a>
+        <div class="u-flex-row-both two columns">
+          <a href="abbott.html" class="grey left six columns">
+            <span class="material-symbols-outlined cta_icon">arrow_back</span>
+            <h6 class="u-margin-none">Prev</h6>
+          </a>
+          <a href="portfolio.html" class="grey right six columns">
+            <h6 class="u-margin-none">Next</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <!-- Image & Summary -->
+      <div class="row u-margin-bottom">
+        <img class="twelve columns u-margin-top" src="../images/maestro/hero.png">
+      </div>
+      <div class="row">
+        <p class="six columns">This upper-level design course project was to design an environmental interactive data visualization experience by focusing on the collection and organization of a complex data-set transformed into an interactive experience through a digital interface.</p>
+        <p class="six columns">The final result is an app that could be used as a teaching, skill analysis, and growth guidance tool for intermediate musicians and music educators. One of the main features is a feedback loop between the ensemble director and students’ at-home practice time.</p>
+      </div>
+      <div class="row">
+        <div class="divline ten columns offset-by-one"></div>
+      </div>
+      <!-- Role, Duration, Tools -->
+      <div class="row">
+        <div class="six columns">
+          <h4>Role</h4>
+          <p>I performed the research portion of the project with a partner, then completed the final design myself.</p>
+        </div>
+        <div class="three columns">
+          <h4>Duration</h4>
+          <p>6 weeks</p>
+        </div>
+        <div class="three columns">
+          <h4>Tools</h4>
+          <p>Sketch, Google Material Design</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="divline ten columns offset-by-one"></div>
+      </div>
+      <!-- Research -->
+      <div class="row u-margin-bottom">
+        <h4>Research</h4>
+      </div>
+      <div class="row u-margin-bottom">
+        <div class="twelve columns">
+          <p><b>Survey</b></p>
+          <p>Our survey was aimed at people who had learned to play an instrument, especially in middle or high school band. We received a total of 74 responses.</p>
+        </div>
+      </div>
+      <div class="row u-margin-bottom">
+        <div class="six columns offset-by-three">
+          <h5>Did you actually practice as much as you should have?</h5>
+          <img src="../images/maestro/survey.png" class="twelve columns">
+        </div>
+      </div>
+      <p class="row u-margin-bottom">
+        <b>Key Quotes</b>
+      </p>
+      <div class="row u-margin-bottom">
+        <p class="four columns">
+          "Regular practice is simultaneously the worst part and the most important part of being a musician."
+        </p>
+        <p class="four columns">
+          "I played Guitar Hero more than my actual instrument."
+        </p>
+        <p class="four columns">
+          "Kids would be more willing if they understood that practicing helps and is not a failure on your part."
+        </p>
+      </div>
+      <div class="row u-margin-bottom">
+        <div class="twelve columns">
+          <p><b>Interview</b></p>
+          <p>My partner and I met with Nick Strobel, an orchestra director at Bellingham High School, to ask him a few questions about his classes, his students, and being a music teacher. His insight was extremely helpful in forming the director's side of Maestro. We were also able to actually visit visit one of his Advanced Orchestra rehearsals to see how students were utilizing class time.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <p><b>How often and for how long do you recommend your students practice at home?</b></p>
+          <p>"This is going to be embarrassing—I only asked them for 45 minutes a week. Setting the bar low. Because I know if everyone did that the group would be a lot better, right? But yet, very few do.  Even 15 minutes of good, good practice is valuable, and I try to teach some strategies to utilize their time for busy teens or kids that don’t like practicing."</p>
+        </div>
+        <div class="four columns">
+          <p><b>How do you measure student success in your classes?</b></p>
+          <p>"I measure success based on personal growth, rather than a set bar. And every student is successful if they’ve achieved their potential, or they’re moving along their personal growth path, to contribute to the ensemble. That’s successful to me—getting them there is the tricky part."</p>
+        </div>
+        <div class="four columns">
+          <p><b>Can you tell when students aren't practicing based on how they sound?</b></p>
+          <p>"Yeah, or how they don’t progress. If they were working on things, it would get better. The reality is, some things do come into rehearsal. Go ahead and take six weeks on the basic stuff—but find those passages that rise to the top as the most challenging, those are the things that you do for 60 minutes a week, or spend five minutes on this one, five here and five there, and then it just should play itself."</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="divline ten columns offset-by-one"></div>
+      </div>
+      <!-- Pain Points & Goals -->
+      <div class="row">
+        <div class="six columns">
+          <h4>User Pain Points</h4>
+          <ul>
+            <li>Kids weren’t motivated to take their instruments home to practice</li>
+            <li>Music class “homework” doesn’t get taken as seriously as other classes, even for good students, since there aren’t tangible assignments</li>
+            <li>Students can feel lost practicing on their own without the rest of the ensemble</li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <h4>Goals</h4>
+          <ul>
+            <li>Provide an easy way for directors to assign practice time that can be tangibly completed by the student</li>
+            <li>Provide resources for students while they practice like real-time feedback, metronome, and backing tracks</li>
+            <li>Make practicing at home more appealing by focusing on improvement metrics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="divline ten columns offset-by-one"></div>
+      </div>
+      <!-- Visual Design Elements -->
+      <div class="row u-margin-bottom">
+        <h4 class="twelve columns">Visual Design Elements</h4>
+      </div>
+      <div class="row u-margin-bottom">
+        <img src="../images/maestro/Vis1.png" class="four columns">
+        <img src="../images/maestro/Vis2.png" class="four columns m-margin-top">
+        <img src="../images/maestro/Vis3.png" class="four columns m-margin-top">
+      </div>
+      <div class="row">
+        <img src="../images/maestro/Vis5.png" class="four columns">
+        <img src="../images/maestro/Vis4.png" class="four columns m-margin-top">
+        <img src="../images/maestro/Vis6.png" class="four columns m-margin-top">
+      </div>
+      <div class="row">
+        <div class="divline ten columns offset-by-one"></div>
+      </div>
+      <!-- Final Handoff -->
+      <div class="row u-margin-bottom">
+        <h4 class="twelve columns">Final Handoff</h4>
+      </div>
+      <!-- Desktop Only -->
+      <h5 class="row u-margin-bottom">Class Overview</h5>
+      <p class="row u-margin-bottom">Directors can see ensemble progress at a glance.</p>
+      <div class="row">
+        <img class="d_scroll_img" src="../images/maestro/dashboard.png">
+      </div>
+      <!-- Desktop Only -->
+      <h5 class="row u-margin-bottom">Rehearsal</h5>
+      <p class="row u-margin-bottom">Leave paper scores behind and assign practice time with ease.</p>
+      <div class="row">
+        <img class="d_scroll_img" src="../images/maestro/rehearseAssign.png">
+      </div>
+      <!-- Mobile Only, Static images -->
+      <h5 class="row u-margin-bottom">Practice</h5>
+      <p class="row u-margin-bottom">At home, students can practice assigned sections with AI-powered feedback for skill refinement.</p>
+      <div class="row">
+        <div class="u-flex-row-both grid_container">
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/practice.png">
+          </div>
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/feedback.png">
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Only, Static images -->
+      <h5 class="row u-margin-bottom">Tools</h5>
+      <p class="row u-margin-bottom">Metronome, tuner, and backing track tools help students to reach their fullest potential.</p>
+      <div class="row">
+        <div class="u-flex-row-both grid_container">
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/metronome.png">
+          </div>
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/tuner.png">
+          </div>
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/backingtrack.png">
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Only, Static images -->
+      <h5 class="row u-margin-bottom">Exercises</h5>
+      <p class="row u-margin-bottom">Custom exercises based on areas of improvement supplement in-class learning.</p>
+      <div class="row">
+        <div class="u-flex-row-both grid_container">
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/exercise.png">
+          </div>
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/exercises.png">
+          </div>
+          <div class="three columns m_half">
+            <img class="m_scroll_img" src="../images/maestro/profile.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="divline ten columns offset-by-one"></div>
+      </div>
+      <!-- Takeaway -->
+      <div class="row u-flex-bottom">
+        <div class="eight columns">
+          <h4>Takeaway</h4>
+          <p class="u-margin-none">The research for this project was extremely helpful in uncovering what music educators <em>don't</em> need. Having been in music classes myself, interviewing Nick was helpful to see from the teacher or director's point of view.
+          <br/>This was also my first time utilizing Google Material Design. Overall, it was enjoyable to explore the guidelines and resources as a starting off point, but doesn't seem like a once size fits all or foolproof system.</p>
+        </div>
+        <div class="two columns offset-by-four">
+           <button onclick="topFunction()" class="grey six columns offset-by-six" id="top" title="Top">
+            <h6 class="u-margin-none">Top</h6>
+            <span class="material-symbols-outlined cta_icon">arrow_upward</span>
+          </button>
         </div>
       </div>
     </div>
-    <div class="row first head">
-      <div data-aos="fade-right" data-aos-duration="120" class="eight columns">
-        <h3>Maestro App UI Design</h3>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns link">
-        <a class="u-text-none scroll-link" href="paperink.html"><i class="fas fa-arrow-left"></i> Paper + Ink Packaging</a><br/>
-        <a class="u-text-none scroll-link" href="torustech.html">Torus Tech Branding <i class="fas fa-arrow-right"></i></a>
-      </div>
+
+    <div class="footer">
+      <p class="foot_long">© AUGUST WANNER | DESIGNED AND DEVELOPED BY AUGUST WANNER</p>
+      <p class="foot_short">© AUGUST WANNER<br/>DESIGNED AND DEVELOPED BY AUGUST WANNER</p>
     </div>
-    <div class="row u-flex-row spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <img src="../images/maestro/metronome.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="nine columns">
-        <img src="../images/maestro/dashboard.png" class="u-max-full-width">
-      </div>
-    </div>
-    <div class="row u-margin-top spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns offset-by-two">
-        <h4 class="u-text-center">Project</h4>
-        <p>This project was to design an environmental interactive data visualization experience. Focus on the collection and organization of a complex data-set transformed into an interactive experience through a digital interface.</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns">
-        <h4 class="u-text-center">Concept</h4>
-        <p>My idea was to create an app that could be used as a teaching, skill analysis, and growth guidance tool for intermediate musicians and music educators. One of the main features is a feedback loop between the ensemble director and students’ at-home practice time.</p>
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row">
-      <h4 class="u-text-center">Competitors</h4>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row u-flex-row">
-      <div class="eight columns offset-by-two">
-        <img src="../images/maestro/competitors.png" class="u-max-full-width">
-      </div>
-    </div>
-    <div data-aos="fade-left" data-aos-duration="120" class="row spacer">
-      <div class="six columns offset-by-three">
-        <p>Looking into potential competitors revealed that while there are useful apps for learning and some for helping with music practice, there wasn't really any in the niche I was aiming for.</p>
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row">
-      <h4 class="u-text-center">Survey</h4>
-    </div>
-    <div class="row">
-      <div data-aos="fade-right" data-aos-duration="120" class="six columns offset-by-three">
-        <p>My survey was aimed at people who had learned to play an instrument, especially in middle or high school band. I received a total of 74 responses.</p>
-      </div>
-    </div>
-    <div class="row u-flex-row">
-      <div data-aos="fade-right" data-aos-duration="120" class="five columns offset-by-one">
-        <h5>Did you actually practice <br/>as much as you were instructed to?</h5>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="six columns">
-        <img src="../images/maestro/survey.png" class="u-max-full-width">
-      </div>
-    </div>
-    <div class="row spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="far fa-comment" style="color:#f69639;font-size:5rem;"></i>
-        <p><br/>"Regular practice is simultaneously the worst part and the most important part of being a musician."</p>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="far fa-comment" style="color:#a75ee0;font-size:5rem;"></i>
-        <p><br/>"I played Guitar Hero more than my actual instrument."</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="far fa-comment" style="color:#5dc300;font-size:5rem;"></i>
-        <p><br/>"Kids would be more willing if they understood that practicing helps and is not a failure on your part."</p>
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row u-margin-top">
-      <h4 class="u-text-center">Interview</h4>
-    </div>
-    <div data-aos="fade-left" data-aos-duration="120" class="row">
-      <div class="six columns offset-by-three">
-        <p>I met with Nick Strobel, an orchestra director at Bellingham High School, to ask him a few questions about his classes, his students, and being a music teacher. His insight was extremely helpful in forming the director's side of Maestro.</p>
-      </div>
-    </div>
-    <div class="row u-margin-top spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="far fa-comments" style="color:#f69639;font-size:5rem;"></i>
-        <p><br/><strong>How often and for how long do you recommend your students practice at home?</strong></p>
-        <p>"This is going to be embarrassing—I only asked them for 45 minutes a week. Setting the bar low. Because I know if everyone did that the group would be a lot better, right? But yet, very few do. <br/> Even 15 minutes of good, good practice is valuable, and I try to teach some strategies to utilize their time for busy teens or kids that don’t like practicing."</p>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="far fa-comments" style="color:#a75ee0;font-size:5rem;"></i>
-        <p><br/><strong>How do you measure student success in your classes?</strong></p>
-        <p>"I measure success based on personal growth, rather than a set bar. And every student is successful if they’ve achieved their potential, or they’re moving along their personal growth path, to contribute to the ensemble. That’s successful to me—getting them there is the tricky part."</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="far fa-comments" style="color:#5dc300;font-size:5rem;"></i>
-        <p><br/><strong>Can you tell when students aren't practicing based on how they sound?</strong></p>
-        <p>"Yeah, or how they don’t progress. If they were working on things, it would get better.<br/>The reality is, some things do come into rehearsal. Go ahead and take six weeks on the basic stuff—but find those passages that rise to the top as the most challenging, those are the things that you do for 60 minutes a week, or spend five minutes on this one, five here and five there, and then it just should play itself."</p>
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row">
-      <h4 class="u-text-center">Observation</h4>
-    </div>
-    <div data-aos="fade-left" data-aos-duration="120" class="row">
-      <div class="six columns offset-by-three">
-        <p>Nick was kind enough to let me actually visit one of his Advanced Orchestra rehearsals to see how students were utilizing class time. I noticed a few pain points where rehearsal could be streamlined:</p>
-      </div>
-    </div>
-    <div class="row spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="fas fa-times" style="color:#f69639;font-size:5rem;"></i>
-        <p><br/>Didn’t take their instruments home to practice</p>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="fas fa-times" style="color:#a75ee0;font-size:5rem;"></i>
-        <p><br/>Trouble staying focused or on topic</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns u-flex-column">
-        <i class="fas fa-times" style="color:#5dc300;font-size:5rem;"></i>
-        <p><br/>Weren’t listening to different parts of the band as a whole</p>
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row">
-      <h4 class="u-text-center">Sketches</h4>
-    </div>
-    <div class="row spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/sketches.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/sketches2.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/sketches3.jpeg" class="u-max-full-width">
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row u-margin-top">
-      <h4 class="u-text-center">Paper Prototypes</h4>
-    </div>
-    <div class="row u-flex-row">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns">
-        <p>Testing my peers navigating around the app, assigning passages to practice, and using different tools was extrememly helpful.</p>
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/prototype.jpeg" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/prototype1.jpeg" class="u-max-full-width">
-      </div>
-    </div>
-    <div class="row spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/prototype2.jpeg" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/prototype3.jpeg" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/prototype4.jpeg" class="u-max-full-width">
-      </div>
-    </div>
-    <div data-aos="fade-right" data-aos-duration="120" class="row u-margin-top">
-      <h4 class="u-text-center">Final Design</h4>
-    </div>
-    <div class="row u-flex-row">
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <p>Directors can see ensemble progress at a glance.</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="nine columns">
-        <img src="../images/maestro/dashboard.png" class="u-max-full-width">
-      </div>
-    </div>
-    <div class="row u-flex-row u-margin-top spacer">
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <p>Leave paper scores behind and assign practice time with ease.</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="nine columns">
-        <img src="../images/maestro/rehearseAssign.png" class="u-max-full-width">
-      </div>
-    </div>
-    <div class="row u-flex-row u-margin-top">
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/practice.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="four columns">
-        <img src="../images/maestro/feedback.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="four columns">
-        <p>At home, students can practice assigned sections with AI-powered feedback for skill refinement.</p>
-      </div>
-    </div>
-    <div class="row u-flex-row u-margin-top">
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <img src="../images/maestro/metronome.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <img src="../images/maestro/tuner.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <img src="../images/maestro/backingtrack.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="three columns">
-        <p>Metronome, tuner, and backing track tools help students to reach their fullest potential.</p>
-      </div>
-    </div>
-    <div class="row u-flex-row u-margin-top">
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <img src="../images/maestro/exercises.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <img src="../images/maestro/exercise.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-right" data-aos-duration="120" class="three columns">
-        <img src="../images/maestro/profile.png" class="u-max-full-width">
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="three columns">
-        <p>Custom exercises based on areas of improvement supplement in-class learning.</p>
-      </div>
-    </div>
-  </div>
-    <div class="row footer">
-      <p>&copy; August Wanner 2022 / designed and developed by August Wanner</p>
-    </div>
-  </body>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       once: true
     });
   </script>
+</body>
 </html>
