@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132560264-1"></script>
   <script>
@@ -22,27 +23,27 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
+  <!-- Font
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/hamburger.css">
+  <style>a {text-decoration: none;}</style>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffe439">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffe439">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#ffffff">
 
@@ -53,141 +54,157 @@
 
 </head>
 <body>
-  <div class="overlay"></div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="desktop-header">
-      <div class="row top">
-        <a href="index.html" class="four columns name">August Wanner</a>
-        <div class="u-text-right eight columns">
-          <a href="index.html" class="nav-link">work</a>
-          <a href="about.html" class="nav-link middle">about</a>
-          <p class="nav-link current">resume</p>
+    <div class="header">
+      <div class="header_container">
+        <div class="title_container">
+          <a href="index.html" id="name">August Wanner</a>
+          <span class="material-symbols-outlined menu">menu</span>
+        </div>
+        <div class="dropdown_container">
+          <div class="header_line"></div>
+          <a href="index.html" class=" head_link head_work">Work</a>
+          <a href="resume.html" class="head_link head_active">Resume</a>
         </div>
       </div>
     </div>
-    <div class="mobile-header">
-      <div class="header-wrapper">
-        <div class="header_topRow">
-          <a href="index.html" class="name">August Wanner</a>
-          <i class="fas fa-bars menu"></i>
+
+    <div class="container">
+      <div class="row u-margin-bottom">
+        <div class="u-flex-row">
+          <div class="two columns offset-by-one u-flex-row-both icon_justify">
+            <span class="material-symbols-outlined icon">circle</span>
+            <span class="material-symbols-outlined icon">close</span>
+            <span class="material-symbols-outlined icon">square</span>
+            <span class="material-symbols-outlined icon">arrow_forward</span>
+            <span class="material-symbols-outlined icon">pentagon</span>
+          </div>
+          <div class="eight columns">
+            <h1 class="u-margin-none">Experience</h1>
+          </div>
         </div>
-        <div class="header_line"></div>
-        <div class="item-wrapper">
-          <a class="nav-link"  href="index.html">WORK</a>
-          <a class="nav-link" href="about.html">ABOUT</a>
-          <p class="nav-link current">RESUME</p>
+      </div>
+      <div class="row u-margin-bottom u-flex-row baseline">
+        <div class="two columns offset-by-one">
+          <h6 class="u-margin-none">AUG 2019–PRESENT</h6>
+        </div>
+        <div class="eight columns">
+          <h3>Design Intern (.5 years), Junior Designer (1.5 years), Strategic Designer</h3>
+          <p class="u-margin-none"><b><em>Roboboogie</em></b> Portland, OR</p>
         </div>
       </div>
-    </div>
-    <div class="row first u-margin-top">
-      <div data-aos="fade-right" data-aos-duration="180" class="twelve columns subtitle_spacer highlight">
-        <h6 class="subtitle three columns">Experience</h6>
-      </div>
-    </div>
-    <div class="row u-margin-top">
-      <div data-aos="fade-right" data-aos-duration="180" class="three columns">
-        <p class="subsubtitle">AUG 2019–PRESENT</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="nine columns">
-        <h6 class="job">Design Intern (.5 yrs), Jr. Designer (1.5 yrs), Strategic Designer</h6>
-        <div class="jobsub"><b>Roboboogie</b> Portland, OR</div>
-        <p>Analyzed industry research and data insights to create user experience and interface improvements on a number of client accounts. Collaborated on design interation and prototyping for web and mobile experiences. Independently worked on projects, leveraging visual and interactive design skills, attention to detail, and production value.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div data-aos="fade-right" data-aos-duration="180" class="three columns">
-        <p class="subsubtitle">SEPT 2017–JUNE 2019</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="nine columns">
-        <h6 class="job">Web & Graphic Designer</h6>
-        <div class="jobsub"><b>Western Washington University</b> Bellingham, WA</div>
-        <p>Contributed within a team to multiple phases of a full website redesign, demonstrating competency in web design, quickly learning new coding languages, and adapting skills to many different workflows. Worked with communications team in creating varied print materials following university brand guidelines.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div data-aos="fade-right" data-aos-duration="180" class="three columns">
-        <p class="subsubtitle">SEPT 2018–FEB 2019</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="nine columns">
-        <h6 class="job">Web & Graphic Designer, Social Media Director</h6>
-        <div class="jobsub"><b>Foreshadow Games</b> Remote Collaboration</div>
-        <p>Independently customized website theme, created company-wide style guide and several graphics for games. Collaborated with other artists on game & character design while managing social media posts, email campaigns, and company website.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div data-aos="fade-right" data-aos-duration="180" class="twelve columns subtitle_spacer highlight">
-        <h6 class="subtitle three columns">Education</h6>
-      </div>
-    </div>
-    <div class="row u-margin-top">
-      <div data-aos="fade-right" data-aos-duration="180" class="three columns">
-        <p class="subsubtitle">SEPT 2015–JUNE 2019</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="nine columns">
-        <h6 class="job">Western Washington University</h6>
-        <div class="jobsub">Bellingham, WA</div>
-        <p>Bachelor of Arts; Design major, Art History minor.<br/>Active in Poets & Lyricists Society and Open Mic Nights.</p>
-      </div>
-    </div>
-    <div class="row courses">
-      <div data-aos="fade-right" data-aos-duration="180" class="three columns">
-        <p class="subsubtitle">NOTABLE COURSES</p>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="four columns">
-        <p class="num"><strong>Design</strong><br/>
-          Motion Graphics<br/>
-          Typography I</br>
-          2D Design: Branding</br>
-          3D Design: Packaging</br>
-          Print & Finishing</br>
-          Digital Media I: Web Design </br>
-          Digital Media II: UI & UX</p>
-        </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="five columns">
-        <p><strong>Computer Science</strong></br>
-          Computer-Mediated Communication</br>
-          Dynamic Websites</p>
-        <p><strong>Art History</strong></br>
-          History of Modern Art<br/>
-          Art & Science</br>
-          Art & Technology</p>
-      </div>
-    </div>
-    <div class="row">
-      <div data-aos="fade-right" data-aos-duration="180" class="twelve columns subtitle_spacer highlight">
-        <h6 class="subtitle three columns">Skills</h6>
-      </div>
-    </div>
-    <div class="row u-margin-top">
-      <div data-aos="fade-left" data-aos-duration="180" class="three columns offset-by-three">
-        <p class="num">Team environments<br/>
-          Creative problem solving<br/>
-          Marketing knowledge<br/>
-          Social media management
+      <div class="row u-margin-bottom">
+        <p class="eight columns offset-by-three">
+          Analyzed industry research and data insights to create user experience and interface improvements on a number of client accounts. Collaborated on design interation and prototyping for web and mobile experiences. Independently worked on projects, leveraging visual and interactive design skills, attention to detail, and production value.
         </p>
       </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="three columns">
-        <p>Time management<br/>
-          Adobe Creative Suite<br/>
-          PatternLab<br/>
-          Atomic Design
+      <div class="row u-margin-bottom u-flex-row baseline">
+        <div class="two columns offset-by-one">
+          <h6 class="u-margin-none">SEPT 2017–JUNE 2019</h6>
+        </div>
+        <div class="eight columns">
+          <h3>Web & Graphic Designer</h3>
+          <p class="u-margin-none"><b><em>Western Washington University</em></b> Bellingham, WA</p>
+        </div>
+      </div>
+      <div class="row u-margin-bottom">
+        <p class="eight columns offset-by-three">
+          Analyzed industry research and data insights to create user experience and interface improvements on a number of client accounts. Collaborated on design interation and prototyping for web and mobile experiences. Independently worked on projects, leveraging visual and interactive design skills, attention to detail, and production value.
         </p>
       </div>
-      <div data-aos="fade-left" data-aos-duration="180" class="three columns">
-        <p class="num">HTML5 / Mustache<br/>
-          CSS3 / Sass<br/>
-          JQuery<br/>
-          Git
-        </p>
+      <div class="row u-margin-bottom u-flex-row baseline">
+        <div class="two columns offset-by-one">
+          <h6 class="u-margin-none">SEPT 2018–FEB 2019</h6>
+        </div>
+        <div class="eight columns">
+          <h3>Web & Graphic Designer, Social Media Director</h3>
+          <p class="u-margin-none"><b><em>Foreshadow Games</em></b> Remote Collaboration</p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="eight columns offset-by-three">Independently customized website theme, created company-wide style guide and several graphics for games. Collaborated with other artists on game & character design while managing social media posts, email campaigns, and company website.</p>
+      </div>
+      <div class="row u-margin-bottom">
+        <div class="u-flex-row">
+          <div class="two columns offset-by-one u-flex-row-both icon_justify">
+            <span class="material-symbols-outlined icon">close</span>
+            <span class="material-symbols-outlined icon">square</span>
+            <span class="material-symbols-outlined icon">arrow_forward</span>
+            <span class="material-symbols-outlined icon">pentagon</span>
+            <span class="material-symbols-outlined icon">add</span>
+          </div>
+          <div class="eight columns">
+            <h1 class="u-margin-none">Education</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row u-margin-bottom u-flex-row baseline">
+        <div class="two columns offset-by-one">
+          <h6 class="u-margin-none">SEPT 2015–JUNE 2019</h6>
+        </div>
+        <div class="eight columns">
+          <h3>Western Washington University</h3>
+          <p class="u-margin-none">Bellingham, WA</p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="eight columns offset-by-three">Bachelor of Arts; Design major, Art History minor.<br/>Active in Poets & Lyricists Society and Open Mic Nights.</p>
+      </div>
+      <div class="row u-margin-bottom">
+        <div class="u-flex-row">
+          <div class="two columns offset-by-one u-flex-row-both icon_justify">
+            <span class="material-symbols-outlined icon">add</span>
+            <span class="material-symbols-outlined icon">change_history</span>
+            <span class="material-symbols-outlined icon">close</span>
+            <span class="material-symbols-outlined icon">square</span>
+            <span class="material-symbols-outlined icon">arrow_forward</span>
+          </div>
+          <div class="eight columns">
+            <h1 class="u-margin-none">Skills</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="u-margin-none three columns offset-by-three">Team environments<br/>Creative problem solving<br/>Marketing knowledge<br/>Social media management</p>
+        <p class="u-margin-none three columns">Time management<br/>Adobe Creative Suite<br/>PatternLab<br/>Atomic Design</p>
+        <p class="u-margin-none three columns">HTML5 / Mustache<br/>CSS3 / Sass<br/>JQuery<br/>Git</p>
+      </div>
+      <div class="row about m_gap">
+        <img src="images/portrait3_bw.png" class="four columns offset-by-one">
+        <div class="about_text six columns">
+          <div>
+            <div class="icon_head u-margin-bottom">
+              <div>
+                <span class="material-symbols-outlined icon">square</span>
+                <span class="material-symbols-outlined icon">arrow_downward</span>
+                <span class="material-symbols-outlined icon">pentagon</span>
+                <span class="material-symbols-outlined icon">add</span>
+                <span class="material-symbols-outlined icon">change_history</span>
+                <span class="material-symbols-outlined icon d_hide">close</span>
+              </div>
+              <h2 class="u-margin-none">Hi, I'm August.</h2>
+            </div>
+            <p>I'm a graduate of Western Washington University's competitive and comprehensive design program. Outside of design work, I also love textile and paper craft, house plants, and trivia.</p>
+            <p>If you want to work with me, want me to work for you, or just want to say hi, let's get in contact!</p>
+          </div>
+          <div class="u-flex-row m_gap">
+            <a href="https://www.instagram.com/onlyafteraugust/" class="cta six columns cta_right">
+              <h6 class="u-margin-none">Follow on insta</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+            </a>
+            <a href="mailto:wanneraugust@gmail.com" class="cta six columns cta_right">
+              <h6 class="u-margin-none">Send an email</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row footer">
-    <p>&copy; August Wanner 2021 / designed and developed by August Wanner</p>
-  </div>
+
+    <div class="footer">
+      <p class="foot_long">© AUGUST WANNER | DESIGNED AND DEVELOPED BY AUGUST WANNER</p>
+      <p class="foot_short">© AUGUST WANNER<br/>DESIGNED AND DEVELOPED BY AUGUST WANNER</p>
+    </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -1,0 +1,506 @@
+:root {
+  scroll-behavior: smooth;
+  --accent: #FFE439;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.overlay-active {
+  display: block;
+}
+
+.highlight {
+  background-color: var(--accent);
+  padding-left: 10px;
+}
+
+.range {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-feature-settings: "lnum" on;
+  -webkit-font-feature-settings: "lnum" on;
+  -moz-font-feature-settings: "lnum" on;
+}
+
+.num {
+  font-feature-settings: "lnum" on;
+}
+
+.subtitle {
+  font-family: "IBM Plex Mono";
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1.9rem;
+  letter-spacing: .2rem;
+  font-style: normal;
+}
+
+.big-link {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 .5rem;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.big-link:hover {
+  background-color: var(--accent);
+  color: #000000;
+}
+
+.subsubtitle {
+  font-size: 1.3rem;
+  font-feature-settings: "lnum" on;
+  text-align: left;
+  font-style: italic;
+  line-height: 1rem;
+  margin-bottom: 5px;
+}
+
+.courses {
+  display: none;
+}
+
+.job {
+  font-size: 1.9rem;
+  margin-bottom: 8px;;
+  font-family: 'IBM Plex Mono';
+  font-weight: 600;
+  font-style:normal;
+}
+
+.jobsub-small {
+  font-weight: 400;
+}
+
+.jobsub {
+  margin-bottom: 20px;
+}
+
+.top {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.2s;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--accent);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.nav-link:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+.current {
+  cursor: pointer;
+  margin-bottom: 0;
+  background-color: var(--accent);
+}
+
+.current:after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1.5rem 0;
+  border-bottom: 1px solid var(--accent);
+  font-size: 2.5rem;
+}
+
+.footer {
+  width: 100vw;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding: 25px 50px;
+  text-transform: uppercase;
+  font-feature-settings: "lnum" on;
+  -webkit-font-feature-settings: "lnum" on;
+  -moz-font-feature-settings: "lnum" on;
+  font-size: .9rem;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.mobile-header {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 85%;
+  max-width: 1000px;
+}
+
+.item-wrapper {
+  flex-direction: column;
+  width:100%;
+  display: none;
+  height: 170px;
+  justify-content: space-evenly;
+}
+
+.button {
+  margin: 0 0 1rem 0;
+}
+
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+}
+
+.header-wrapper {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #fff;
+  padding: 1rem 2rem 0 2rem;
+  box-sizing: border-box;
+  z-index: 3;
+  -webkit-box-shadow: 0px -10px 38px 0px rgba(85,85,85,0.56);
+  -moz-box-shadow: 0px -10px 38px 0px rgba(85,85,85,0.56);
+  box-shadow: 0px -10px 38px 0px rgba(85,85,85,0.56);
+}
+
+.header_topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.header_line {
+  border-bottom: 1px solid #f1f1f1;
+  display: none;
+  transition: 0.2s ease;
+}
+
+.menu {
+  font-size: 35px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.scroll-link {
+  color: #222;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: 0.2s;
+  position: relative;
+}
+
+.scroll-link::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--accent);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.scroll-link:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+.desktop-header {
+  display: none;
+}
+
+.caption {
+  font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-style: italic;
+  background-color: #222;
+}
+
+.name {
+  text-decoration: none;
+  color: #000;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
+  text-transform: inherit;
+  font-style: italic;
+}
+
+h4 {
+  margin-top: 2rem;
+}
+
+.d-scroll {
+  height: 300px;
+  overflow: scroll;
+  border: 4px solid #222;
+  border-radius: 4px;
+}
+
+.m-scroll {
+
+}
+
+.rotate {
+  text-orientation: sideways;
+  writing-mode: vertical-rl;
+  margin-bottom: 0px;
+}
+
+/* Mobile only */
+@media (max-width: 550px) {
+  .mobile-margin {
+    margin: 0;
+  }
+  .first {
+    margin-top: 70px;
+  }
+}
+
+/* Tablet and desktop */
+@media (min-width: 550px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .spacer {
+    margin-bottom: 100px;
+  }
+
+  .full {
+    height: 75vh;
+  }
+
+  .download {
+    margin-top: -30px;
+  }
+
+  .ref {
+    margin-bottom: 50px;
+  }
+
+  .first {
+    margin: auto;
+  }
+
+  .subtitle {
+    padding-top:3px;
+  }
+
+  .subsubtitle {
+    padding-top: 12px;
+    margin-bottom: 25px;
+  }
+
+  .head {
+    flex-direction: row;
+  }
+
+  .button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .desktop-header {
+    display: block;
+    margin-bottom: 4rem;
+  }
+
+  .sticky {
+    width: inherit;
+  }
+
+  .item-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .top {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .piece {
+    position: relative;
+  }
+
+  .caption {
+    font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
+    color: rgba(255,255,255,0);
+    font-size: 2.5rem;
+    margin: 0 0 1rem 1rem;
+    background-color: transparent;
+    transition: 0.4s;
+  }
+
+  .small-caption {
+    font-family: 'IBM Plex Mono', 'Helvetica Neue', sans-serif;
+    color: rgba(255,255,255,0);
+    font-size: 1.5rem;
+    margin: 0 0 1rem 1rem;
+    background-color: transparent;
+    transition: .3s ease;
+  }
+
+  .small-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+    background-color: rgba(34,34,34,0);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 2;
+    transition: 0.2s;
+  }
+
+  .small-overlay::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .small-overlay:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+
+  .small-overlay:hover .caption {
+    color: rgba(255,255,255, 1);
+  }
+
+  .small-overlay:hover .small-caption {
+    color: rgba(255,255,255, 1);
+  }
+
+  .small-overlay:hover .caption:after {
+    width: 100%;
+  }
+
+  .nav-item {
+    padding-right: 1rem;
+  }
+
+  .logo {
+    width: 55%;
+    padding-top: 10px;
+  }
+
+  .d-scroll {
+    width: 100%;
+    height: calc(100vw * 0.625);
+  }
+
+  .m-scroll {
+
+  }
+}
+
+/* Desktop */
+@media (min-width: 898px) {
+  .desktop-header {
+    width: 100%;
+  }
+
+  .logo {
+    width: 45%
+  }
+}

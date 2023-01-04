@@ -26,26 +26,24 @@
   <!-- Font
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/hamburger.css">
   <style>a {text-decoration: none;}</style>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffe439">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffe439">
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="theme-color" content="#ffffff">
 
@@ -56,111 +54,155 @@
 
 </head>
 <body>
-  <div class="overlay"></div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="desktop-header">
-      <div class="row top">
-        <a href="index.html" class="four columns name">August Wanner</a>
-        <div class="u-text-right eight columns">
-          <p class="nav-link current">work</p>
-          <a class="nav-link middle" href="about.html">about</a>
-          <a class="nav-link" href="resume.html">resume</a>
+    <div class="header">
+      <div class="header_container">
+        <div class="title_container">
+          <a href="index.html" id="name">August Wanner</a>
+          <span class="material-symbols-outlined menu">menu</span>
         </div>
-      </div>
-    </div>
-    <div class="mobile-header">
-      <div class="header-wrapper">
-        <div class="header_topRow">
-          <a href="index.html" class="name">August Wanner</a>
-          <i class="fas fa-bars menu"></i>
-        </div>
-        <div class="header_line"></div>
-        <div class="item-wrapper">
-          <p class="nav-link current">WORK</p>
-          <a class="nav-link" href="about.html">ABOUT</a>
-          <a class="nav-link" href="resume.html">RESUME</a>
+        <div class="dropdown_container">
+          <div class="header_line"></div>
+          <a href="index.html" class=" head_link head_active head_work">Work</a>
+          <a href="resume.html" class="head_link">Resume</a>
         </div>
       </div>
     </div>
 
-    <div class="row first mobile-margin">
-      <div data-aos="fade-right" data-aos-duration="120" class="six columns piece">
-        <a href="projects/housing.html">
-          <img class="u-max-full-width" src="images/housing/wwu_preview.png">
-          <div class="small-overlay">
-            <p class="caption">WWU Housing Website Redesign</p>
-          </div>
-        </a>
-      </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="six columns piece">
-        <a href="projects/paperink.html">
-          <img class="u-max-full-width" src="images/packaging/paperink_preview.png">
-          <div class="small-overlay">
-            <p class="caption">Paper + Ink Packaging</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div data-aos="fade-left" data-aos-duration="120" class="row u-margin-top mobile-margin piece">
-      <a href="projects/maestro.html">
-        <img class="u-max-full-width" src="images/maestro/maestro_preview.png"/>
-        <div class="small-overlay">
-          <p class="caption">Maestro App UI Design</p>
+    <div class="container">
+      <div class="focus row space">
+        <div class="icon_grid one column icon">
+          <span class="material-symbols-outlined">circle</span>
+          <span class="material-symbols-outlined">close</span>
+          <span class="material-symbols-outlined m_hide">arrow_forward</span>
+          <span class="material-symbols-outlined">square</span>
+          <span class="material-symbols-outlined m_hide">pentagon</span>
+          <span class="material-symbols-outlined">arrow_downward</span>
+          <span class="material-symbols-outlined m_hide">add</span>
+          <span class="material-symbols-outlined">change_history</span>
+          <span class="material-symbols-outlined m_hide">circle</span>
+          <span class="material-symbols-outlined m_hide">arrow_forward</span>
+          <span class="material-symbols-outlined">close</span>
+          <span class="material-symbols-outlined">square</span>
+          <span class="material-symbols-outlined m_hide">favorite</span>
+          <span class="material-symbols-outlined m_hide">arrow_downward</span>
+          <span class="material-symbols-outlined">add</span>
+          <span class="material-symbols-outlined m_hide">pentagon</span>
         </div>
-      </a>
-    </div>
-    <div class="row u-margin-top mobile-margin">
-      <div data-aos="fade-right" data-aos-duration="120" class="six columns piece">
-        <a href="projects/torustech.html">
-          <img class="u-max-full-width" src="images/torus/torus_preview.png">
-          <div class="small-overlay">
-            <p class="caption">Torus Tech Branding</p>
-          </div>
-        </a>
+        <p class="focus_text eleven columns">I’m a full-stack designer who loves to focus on optimization, systems design, and web branding. New creative avenues are always welcomed, explored, and cultivated.</p>
       </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="six columns piece">
-        <a href="projects/whitesalmon.html">
-          <img class="u-max-full-width" src="images/whitesalmon/ws_preview.png">
-          <div class="small-overlay">
-            <p class="caption">White Salmon, WA Website Redesign</p>
+      <!-- Abbott -->
+      <div class="project row">
+        <div class="project_text three columns">
+          <div class="project_text_head u-margin-bottom">
+            <span class="material-symbols-outlined icon big">pentagon</span>
+            <h2 class="u-margin-none">Pediasure and Ensure Websites</h2>
           </div>
-        </a>
-      </div>
-    </div>
-    <div data-aos="fade-left" data-aos-duration="120" class="row u-margin-top mobile-margin piece">
-      <a href="projects/whatsgood.html">
-        <img class="u-max-full-width" src="images/whatsgood/whatsgood_preview.png"/>
-        <div class="small-overlay">
-          <p class="caption">What's Good? Poster</p>
+          <h4>SEO</h4>
+          <p>Utilizing existing brand styles to find fresh new website designs for Pediasure Italy and Ensure Italy for consistency, easy template building, and user accessibility.</p>
+          <a href="projects/abbott.html" class="grey index right twelve columns">
+            <h6 class="u-margin-none">Read</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+          </a>
         </div>
-      </a>
-    </div>
-    <div class="row u-margin-top mobile-margin">
-      <div data-aos="fade-right" data-aos-duration="120" class="six columns piece">
-        <a href="projects/portraits.html">
-          <img class="u-max-full-width" src="images/portraits/portraits_preview.png"/>
-          <div class="small-overlay">
-            <p class="caption">Illustrated Portraits</p>
-          </div>
-        </a>
+        <div class="nine columns">
+          <a href="projects/abbott.html">
+            <img src="images/abbott/hero.png" class="twelve columns m-margin-top">
+          </a>
+        </div>
       </div>
-      <div data-aos="fade-left" data-aos-duration="120" class="six columns mobile-margin piece">
-        <a href="projects/rottentomatoes.html">
-          <img class="u-max-full-width" src="images/rottentomatoes/rt_preview.png" />
-          <div class="small-overlay">
-            <p class="caption">Rotten Tomatoes UX Redesign</p>
+      <!-- Maestro -->
+      <div class="project row">
+        <div class="project_text three columns">
+          <div class="project_text_head u-margin-bottom">
+            <span class="material-symbols-outlined icon big">add</span>
+            <h2 class="u-margin-none">Maestro App</h2>
           </div>
-        </a>
+          <h4>Research</h4>
+          <p>An environmental data visualization experience that can be used as a teaching, skill analysis, and growth guidance tool for intermediate musicians and music educators.</p>
+          <a href="projects/maestro.html" class="grey index right twelve columns">
+            <h6 class="u-margin-none">Read</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+          </a>
+        </div>
+        <div class="nine columns">
+          <a href="projects/portfolio.html">
+            <img src="images/maestro/hero.png" class="twelve columns m-margin-top">
+          </a>
+        </div>
+      </div>
+      <!-- Roboboogie Design Portfolio -->
+      <div class="project row">
+        <div class="project_text three columns">
+          <div class="project_text_head u-margin-bottom">
+            <span class="material-symbols-outlined icon big">square</span>
+            <h2 class="u-margin-none">Roboboogie Design Portfolio</h2>
+          </div>
+          <h4>Content Strategy</h4>
+          <p>Helping Roboboogie show off visual designs with templatized new components that called back to existing website guidelines.</p>
+          <a href="projects/portfolio.html" class="grey index right twelve columns">
+            <h6 class="u-margin-none">Read</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+          </a>
+        </div>
+        <div class="nine columns">
+          <a href="projects/portfolio.html">
+            <img src="images/portfolio/hero.png" class="twelve columns m-margin-top">
+          </a>
+        </div>
+      </div>
+      <!-- Snowledge -->
+      <div class="project row">
+        <div class="project_text three columns">
+          <div class="project_text_head u-margin-bottom">
+            <span class="material-symbols-outlined icon big">close</span>
+            <h2 class="u-margin-none">Snowledge App Enhancements</h2>
+          </div>
+          <h4>Interaction Design</h4>
+          <p>Native mobile app style guide update, UX, UI, and content recommendations to accommodate new post types, plus best practice guidance.</p>
+          <a href="projects/snowledge.html" class="grey index right twelve columns">
+            <h6 class="u-margin-none">Read</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+          </a>
+        </div>
+        <div class="nine columns">
+          <a href="projects/snowledge.html">
+            <img src="images/snowledge/hero.png" class="twelve columns m-margin-top">
+          </a>
+        </div>
+      </div>
+      <div class="row about m_gap">
+        <img src="images/portrait3_bw.png" class="four columns offset-by-one">
+        <div class="about_text six columns">
+          <div>
+            <div class="icon_head u-margin-bottom">
+              <div>
+                <span class="material-symbols-outlined icon">square</span>
+                <span class="material-symbols-outlined icon">arrow_downward</span>
+                <span class="material-symbols-outlined icon">pentagon</span>
+                <span class="material-symbols-outlined icon">add</span>
+                <span class="material-symbols-outlined icon">change_history</span>
+                <span class="material-symbols-outlined icon d_hide">close</span>
+              </div>
+              <h2 class="u-margin-none">Hi, I'm August.</h2>
+            </div>
+            <p>I'm a graduate of Western Washington University's competitive and comprehensive design program. Outside of design work, I also love textile and paper craft, house plants, and trivia.</p>
+            <p>If you want to work with me, want me to work for you, or just want to say hi, let's get in contact!</p>
+          </div>
+          <div class="u-flex-row m_gap">
+            <a href="https://www.instagram.com/onlyafteraugust/" class="cta six columns cta_right">
+              <h6 class="u-margin-none">Follow on insta</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+            </a>
+            <a href="mailto:wanneraugust@gmail.com" class="cta six columns cta_right">
+              <h6 class="u-margin-none">Send an email</h6><span class="material-symbols-outlined cta_icon">arrow_forward</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row footer">
-    <p>&copy; August Wanner 2021 / designed and developed by August Wanner</p>
-  </div>
 
+    <div class="footer">
+      <p class="foot_long">© AUGUST WANNER | DESIGNED AND DEVELOPED BY AUGUST WANNER</p>
+      <p class="foot_short">© AUGUST WANNER<br/>DESIGNED AND DEVELOPED BY AUGUST WANNER</p>
+    </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
