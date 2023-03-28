@@ -474,7 +474,7 @@
   }
 
   .m_scroll {
-    height:30vw;
+    height:35vw;
   }
 
   .icon_justify {
@@ -499,6 +499,11 @@
   .m_half {
     width: auto;
   }
+
+  .m_border {
+    border: 5px solid var(--dark);
+    border-radius: 16px;
+  }
 }
 
 /* Desktop */
@@ -512,5 +517,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1500px) {
+  .m_scroll {
+    height:30vw;
+  }
+
+  .m_border {
+    border: 10px solid var(--dark);
+    border-radius: 32px;
   }
 }
