@@ -196,6 +196,7 @@
 
 #top {
   margin-top:2rem;
+  width:100%
 }
 
 .left:hover {
@@ -402,6 +403,10 @@
     flex-wrap: wrap;
   }
 
+  .icon_grid .material-symbols-outlined{
+    font-size:22px;
+  }
+
   .icon_head {
     flex-direction: row;
     gap:20px;
@@ -517,6 +522,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .d_scroll {
+    height:40vw;
+  }
+
+  .m_scroll {
+    height:35vw;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .m_scroll {
+    height:30vw;
   }
 }
 

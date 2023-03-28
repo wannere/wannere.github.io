@@ -421,7 +421,9 @@ full-width {
 .u-flex-row-bottom {
   display: flex;
   flex-direction: row;
-  align-items: flex-end; }
+  align-items: flex-end;}
+.u-half-button {
+  width: 45%;}
 
 @media (min-width: 550px) {
   .u-flex-row {
