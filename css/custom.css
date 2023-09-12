@@ -86,9 +86,13 @@
 }
 
 .head_active {
-  font-weight: 700;
-  font-style: italic;
+  font-size: 20px;
   color: var(--dark);
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  color: var(--dark);
+  border-bottom: 2px solid var(--dark);
 }
 
 .head_work {
@@ -242,7 +246,7 @@
 }
 
 .d_scroll {
-  height:60vw;
+  aspect-ratio: 16/11;
   overflow:scroll;
   border-radius: 10px;
   -ms-overflow-style: none;
@@ -250,12 +254,12 @@
 }
 
 .d_border {
-  border: 2px solid var(--grey);
+  border: 10px solid var(--dark);
 }
 
-.d_scroll::-webkit-scrollbar {
+/*.d_scroll::-webkit-scrollbar {
  display: none;
-}
+}*/
 
 .d_scroll_img {
   width:100%;
@@ -263,7 +267,7 @@
 }
 
 .m_scroll {
-  height:80vh;
+  aspect-ratio: 0.5;
   overflow:scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -280,14 +284,18 @@
 }
 
 .m_border {
-  border: 10px solid var(--dark);
+  border: 6px solid var(--dark);
   border-radius: 32px;
+}
+
+.m_border.m_half {
+  border-radius: 16px;
 }
 
 .scroll_container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap:2em;
   flex-wrap: wrap;
 }
@@ -427,12 +435,6 @@
     margin-bottom: 0;
   }
 
-  .project_text_head {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .about {
     flex-direction: row;
   }
@@ -472,14 +474,15 @@
     flex-direction:row;
     gap:0;
     flex-wrap: nowrap;
+    align-items: flex-start;
   }
 
   .d_scroll {
-    height:35vw;
+    aspect-ratio: 16/11;
   }
 
   .m_scroll {
-    height:35vw;
+    aspect-ratio: 0.5;
   }
 
   .icon_justify {
@@ -506,7 +509,7 @@
   }
 
   .m_border {
-    border: 5px solid var(--dark);
+    border: 10px solid var(--dark);
     border-radius: 16px;
   }
 }
@@ -525,25 +528,25 @@
   }
 
   .d_scroll {
-    height:40vw;
+    aspect-ratio: 16/11;
   }
 
   .m_scroll {
-    height:35vw;
+    aspect-ratio: 0.5;
   }
 }
 
 /* Large Desktop */
 @media (min-width: 1400px) {
   .m_scroll {
-    height:30vw;
+    aspect-ratio: 0.5;
   }
 }
 
-/* Large Desktop */
+/* Very Large Desktop */
 @media (min-width: 1500px) {
   .m_scroll {
-    height:30vw;
+    aspect-ratio: 0.5;
   }
 
   .m_border {
