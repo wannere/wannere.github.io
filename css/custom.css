@@ -60,14 +60,11 @@
   padding-bottom: 18px;
 }
 
-.head_link {
-  font-size: 20px;
-  color: var(--dark);
-  display: inline-block;
+.anim {
   position: relative;
 }
 
-.head_link::after {
+.anim::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -77,18 +74,24 @@
   left: 0;
   background-color: var(--dark);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.15s ease-out;
 }
 
-.head_link:hover::after {
+.anim:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.head_link {
+  font-size: 20px;
+  color: var(--dark);
+  display: block;
 }
 
 .head_active {
   font-size: 20px;
   color: var(--dark);
-  display: inline-block;
+  display: block;
   position: relative;
   font-weight: 700;
   color: var(--dark);
@@ -143,27 +146,17 @@
 }
 
 .cta {
-  background-color: var(--accent);
+  color: var(--dark);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap:10px;
   transition: 0.2s;
+  width: fit-contents;
+  align-items: center;
 }
 
-.cta_right {
-  padding: 8px 20px 8px 10px;
-}
-
-.cta_right:hover {
-  padding: 8px 10px;
-}
-
-.cta_left {
-  padding: 8px 10px 8px 20px;
-}
-
-.cta_left:hover {
-  padding: 8px 10px;
+.cta:hover {
+  gap: 20px;
 }
 
 .cta_icon {
@@ -182,8 +175,13 @@
   border: none;
 }
 
-.grey.index {
-  width: 100%;
+.index {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 0;
 }
 
 .right:hover {
@@ -469,6 +467,12 @@
 
   .project_title {
     justify-content: flex-start;
+    align-items: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
     align-items: center;
   }
 

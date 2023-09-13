@@ -7,3 +7,6 @@ $(document).ready(function(){
     $("html, body").animate({scrollTop: 0}, 100);
   });
 });
+$(document).mousemove(function(e){
+    $("#cursor").css({left:e.clientX, top:e.clientY});
+});
