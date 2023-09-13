@@ -57,19 +57,32 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="header">
-      <div class="header_container">
-        <div class="title_container">
-          <a href="../index.html" id="name">August Wanner</a>
-          <span class="material-symbols-outlined menu">menu</span>
-        </div>
-        <div class="dropdown_container">
-          <div class="header_line"></div>
-          <a href="../index.html" class="head_active head_work">Work</a>
-          <a href="../resume.html" class="head_link anim">Resume</a>
-        </div>
+  <div class="header">
+    <div class="header_container">
+      <div class="one L">
+        <div class="header_line"></div>
+        <a href="../index.html" class="nav_link"><img src="../images/icons/Cursor.svg"/> Work</a>
+        <a href="../resume.html" class="nav_link"><img src="../images/icons/Pencil.svg"/> Resume</a>
+        <a href="mailto:wanneraugust@gmail.com" class="nav_link"><img src="../images/icons/Chat.svg"/> Contact</a>
+      </div>
+      <div class="title_container one">
+        <a href="index.html" id="name" class="Ntitle"><span class="t_hide">UX & UI Designer /</span><b> August Wanner</b></a>
+      </div>
+      <div class="u-flex-row-both u-gap one R">
+        <img src="../images/icons/Collab.svg"/>
+        <p class="m_hide u-margin-none">100%</p>
+        <img class="menu" src="../images/icons/Menu.svg"/>
       </div>
     </div>
+    <div class="dropdown_container">
+      <a href="../index.html" class="nav_link"><img src="../images/icons/CursorD.svg"/> Work</a>
+      <a href="../resume.html" class="nav_link"><img src="../images/icons/PencilD.svg"/> Resume</a>
+      <a href="mailto:wanneraugust@gmail.com" class="nav_link"><img src="../images/icons/ChatD.svg"/> Contact</a>
+      <div class="collaborator">
+        <img src="../images/icons/CollabL.svg"/> <p class="u-margin-none">Hi, Visiting Collaborator!</p>
+      </div>
+    </div>
+  </div>
     <!-- Title & Nav -->
     <div class="container">
       <div class="row u-margin-bottom title">
@@ -223,13 +236,14 @@
       <div class="container" style="margin-top:0;">
         <div class="foot_container twelve columns">
           <p class="foot">© AUGUST WANNER <span class="m_break">| </span><br class="d_break"/>DESIGNED AND DEVELOPED BY AUGUST WANNER</p>
-          <button onclick="topFunction()" class="anim index" id="top" title="Top" style="background-color: var(--grey);border:none;">
+          <button onclick="topFunction()" class="anim index" id="top" title="Top"  style="border:none;">
            <h6 class="u-margin-none">Back to top</h6>
            <span class="material-symbols-outlined cta_icon">arrow_upward</span>
           </button>
       </div>
      </div>
     </div>
+    <img src="../images/Follow.svg" class="m_hide" id="cursor">
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
