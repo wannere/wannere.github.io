@@ -598,6 +598,10 @@ button.anim::after {
     aspect-ratio: 1/1;
   }
 
+  .auto {
+    justify-content: space-between
+  }
+
   .nav_link {
     color: var(--white);
     gap: 8px;
