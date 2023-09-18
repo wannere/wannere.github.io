@@ -7,19 +7,19 @@
   --drop: 2px 2px 8px lightgrey;
   --Ylight: #FAF2D6;
   --Ymid: #FCD447;
-  --Ydark: #93803A;
+  --Ydark: #8E6F02;
   --Olight: #FAE4DC;
   --Omid: #FC8D64;
-  --Odark: #A3664B;
+  --Odark: #C23804;
   --Plight: #EDE8F9;
   --Pmid: #B8A2F4;
-  --Pdark: #766B8E;
+  --Pdark: #7247E9;
   --Blight: #DFEEF9;
   --Bmid: #72C0F6;
-  --Bdark: #567E95;
+  --Bdark: #0B69AB;
   --Glight: #E8F2DB;
   --Gmid: #A0D35E;
-  --Gdark: #698145;
+  --Gdark: #527821;
 }
 
 body, a, button, button:hover {
