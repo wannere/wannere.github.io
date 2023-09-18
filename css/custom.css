@@ -26,10 +26,6 @@ body, a, button, button:hover {
       cursor: url(../images/Cursor.svg), auto;
 }
 
-button:hover {
-      cursor: url(../images/CursorH.svg), auto;
-}
-
 body {
   background-color: var(--grey);
   background-image: url(../images/BG.svg)
