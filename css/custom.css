@@ -5,31 +5,41 @@
   --grey: #fafafa;
   --white: #ffffff;
   --drop: 2px 2px 8px lightgrey;
-  --abbottL: #FEEBC0;
-  --abbottD: #E49E00;
-  --allseaterL: #FFCFBD;
-  --allseaterD: #F35F27;
-  --pointbL: #CBEAFF;
-  --pointbD: #0089E9;
-  --atlasL: #DAF4B0;
-  --atlasD: #65A300;
-  --roboL: #E9E1FF;
-  --roboD: #7A5BD0;
-  --maestroL: #D4E7FF;
-  --maestroD: #3D8BF4;
+  --Ylight: #FAF2D6;
+  --Ymid: #FCD447;
+  --Ydark: #93803A;
+  --Olight: #FAE4DC;
+  --Omid: #FC8D64;
+  --Odark: #A3664B;
+  --Plight: #EDE8F9;
+  --Pmid: #B8A2F4;
+  --Pdark: #766B8E;
+  --Blight: #DFEEF9;
+  --Bmid: #72C0F6;
+  --Bdark: #567E95;
+  --Glight: #E8F2DB;
+  --Gmid: #A0D35E;
+  --Gdark: #698145;
 }
 
-body, a, button {
+body, a, button, button:hover {
       cursor: url(../images/Cursor.svg), auto;
 }
 
 button:hover {
-      cursor: url(../images/Cursor.svg), auto;
+      cursor: url(../images/CursorH.svg), auto;
 }
 
 body {
   background-color: var(--grey);
   background-image: url(../images/BG.svg)
+}
+
+.active {
+  border: 3px solid var(--Pmid);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
 
 #cursor{
@@ -59,9 +69,14 @@ a.project {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap:24px;
+  gap:8px;
   padding: 16px;
   border-radius: 12px;
+  transition: 0.2s ease-in-out;
+}
+
+a .canvas:hover {
+  box-shadow: var(--drop);
 }
 
 .stickies p {
@@ -69,123 +84,123 @@ a.project {
 }
 
 .abbott .canvas {
-  background-color: var(--abbottL);
-  border: 1px solid var(--abbottD);
+  background-color: var(--Ylight);
+  border: 1px solid var(--Ymid);
 }
 
 .abbott .cat {
-  background-color: var(--abbottD);
+  background-color: var(--Ymid);
+  color: var(--dark);
   padding: 0 8px;
-  color: white;
   border-radius: 4px;
 }
 
-.abbott h1 {
-  color: var(--abbottD);
+.abbott h6 {
+  color: var(--Ydark);
 }
 
 .abbott.stickies p {
-  background-color: var(--abbottL);
+  background-color: var(--Ymid);
 }
 
 .allseater .canvas {
-  background-color: var(--allseaterL);
-  border: 1px solid var(--allseaterD);
+  background-color: var(--Olight);
+  border: 1px solid var(--Omid);
 }
 
 .allseater .cat {
-  background-color: var(--allseaterD);
-  color: white;
+  background-color: var(--Omid);
+  color: var(--dark);
   padding: 0 8px;
   border-radius: 4px;
 }
 
-.allseater h1 {
-  color: var(--allseaterD);
+.allseater h6 {
+  color: var(--Odark);
 }
 
 .allseater.stickies p {
-  background-color: var(--allseaterL);
+  background-color: var(--Omid);
 }
 
-.pointb h1 {
-  color: var(--pointbD);
+.pointb h6 {
+  color: var(--Bdark);
 }
 
 .pointb .canvas {
-  background-color: var(--pointbL);
-  border: 1px solid var(--pointbD);
+  background-color: var(--Blight);
+  border: 1px solid var(--Bmid);
 }
 
 .pointb .cat {
-  background-color: var(--pointbD);
-  color: white;
+  background-color: var(--Bmid);
+  color: var(--dark);
   padding: 0 8px;
   border-radius: 4px;
 }
 
 .pointb.stickies p {
-  background-color: var(--pointbL);
+  background-color: var(--Bmid);
 }
 
-.atlasnw h1, .atlasnw h2 {
-  color: var(--atlasD);
+.atlasnw h6, .atlasnw h2 {
+  color: var(--Gdark);
 }
 
 .atlasnw .canvas {
-  background-color: var(--atlasL);
-  border: 1px solid var(--atlasD);
+  background-color: var(--Glight);
+  border: 1px solid var(--Gmid);
 }
 
 .atlasnw .cat {
-  background-color: var(--atlasD);
-  color: white;
+  background-color: var(--Gmid);
+  color: var(--dark);
   padding: 0 8px;
   border-radius: 4px;
 }
 
 .atlasnw.stickies p {
-  background-color: var(--atlasL);
+  background-color: var(--Gmid);
 }
 
-.robo h1, .robo h2 {
-  color: var(--roboD);
+.robo h6, .robo h2 {
+  color: var(--Pdark);
 }
 
 .robo .canvas {
-  background-color: var(--roboL);
-  border: 1px solid var(--roboD);
+  background-color: var(--Plight);
+  border: 1px solid var(--Pmid);
 }
 
 .robo .cat {
-  background-color: var(--roboD);
-  color: white;
+  background-color: var(--Pmid);
+  color: var(--dark);
   padding: 0 8px;
   border-radius: 4px;
 }
 
 .robo.stickies p {
-  background-color: var(--roboL);
+  background-color: var(--Pmid);
 }
 
-.maestro h1, .maestro h2 {
-  color: var(--maestroD);
+.maestro h6, .maestro h2 {
+  color: var(--Bdark);
 }
 
 .maestro .canvas {
-  background-color: var(--maestroL);
-  border: 1px solid var(--maestroD);
+  background-color: var(--Blight);
+  border: 1px solid var(--Bmid);
 }
 
 .maestro .cat {
-  background-color: var(--maestroD);
-  color: white;
+  background-color: var(--Bmid);
+  color: var(--dark);
   padding: 0 8px;
   border-radius: 4px;
 }
 
 .maestro.stickies p {
-  background-color: var(--maestroL);
+  background-color: var(--Bmid);
 }
 
 .project_title .icon {
