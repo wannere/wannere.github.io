@@ -32,7 +32,6 @@ body {
 }
 
 .active {
-  border: 3px solid var(--Pmid);
   height: 24px;
   width: 24px;
   border-radius: 50%;
