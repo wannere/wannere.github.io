@@ -2,20 +2,40 @@
   scroll-behavior: smooth;
   --accent: #FFD029;
   --dark: #37362C;
-  --grey: #f1f1f1;
+  --grey: #fafafa;
   --white: #ffffff;
+  --drop: 2px 2px 8px lightgrey;
+  --Ylight: #FAF2D6;
+  --Ymid: #FCD447;
+  --Ydark: #8E6F02;
+  --Olight: #FAE4DC;
+  --Omid: #FC8D64;
+  --Odark: #C23804;
+  --Plight: #EDE8F9;
+  --Pmid: #B8A2F4;
+  --Pdark: #7247E9;
+  --Blight: #DFEEF9;
+  --Bmid: #72C0F6;
+  --Bdark: #0B69AB;
+  --Glight: #E8F2DB;
+  --Gmid: #A0D35E;
+  --Gdark: #527821;
 }
 
-body, a, button {
-      cursor: url(../images/Cursor.svg), auto;
-}
-
-button:hover {
+body, a, button, button:hover {
       cursor: url(../images/Cursor.svg), auto;
 }
 
 body {
+  background-color: var(--grey);
   background-image: url(../images/BG.svg)
+}
+
+.active {
+  border: 3px solid var(--Pmid);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
 
 #cursor{
@@ -33,8 +53,154 @@ body {
   font-size: 25px;
 }
 
-.icon {
-  color: var(--accent);
+.project h1 {
+  margin-bottom: 8px;
+}
+
+a.project {
+  display: block;
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:8px;
+  padding: 16px;
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+}
+
+a .canvas:hover {
+  box-shadow: var(--drop);
+}
+
+.stickies p {
+  padding: 16px;
+}
+
+.abbott .canvas {
+  background-color: var(--Ylight);
+  border: 1px solid var(--Ymid);
+}
+
+.abbott .cat {
+  background-color: var(--Ymid);
+  color: var(--dark);
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.abbott h6 {
+  color: var(--Ydark);
+}
+
+.abbott.stickies p {
+  background-color: var(--Ymid);
+}
+
+.allseater .canvas {
+  background-color: var(--Olight);
+  border: 1px solid var(--Omid);
+}
+
+.allseater .cat {
+  background-color: var(--Omid);
+  color: var(--dark);
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.allseater h6 {
+  color: var(--Odark);
+}
+
+.allseater.stickies p {
+  background-color: var(--Omid);
+}
+
+.pointb h6 {
+  color: var(--Bdark);
+}
+
+.pointb .canvas {
+  background-color: var(--Blight);
+  border: 1px solid var(--Bmid);
+}
+
+.pointb .cat {
+  background-color: var(--Bmid);
+  color: var(--dark);
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.pointb.stickies p {
+  background-color: var(--Bmid);
+}
+
+.atlasnw h6, .atlasnw h2 {
+  color: var(--Gdark);
+}
+
+.atlasnw .canvas {
+  background-color: var(--Glight);
+  border: 1px solid var(--Gmid);
+}
+
+.atlasnw .cat {
+  background-color: var(--Gmid);
+  color: var(--dark);
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.atlasnw.stickies p {
+  background-color: var(--Gmid);
+}
+
+.robo h6, .robo h2 {
+  color: var(--Pdark);
+}
+
+.robo .canvas {
+  background-color: var(--Plight);
+  border: 1px solid var(--Pmid);
+}
+
+.robo .cat {
+  background-color: var(--Pmid);
+  color: var(--dark);
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.robo.stickies p {
+  background-color: var(--Pmid);
+}
+
+.maestro h6, .maestro h2 {
+  color: var(--Bdark);
+}
+
+.maestro .canvas {
+  background-color: var(--Blight);
+  border: 1px solid var(--Bmid);
+}
+
+.maestro .cat {
+  background-color: var(--Bmid);
+  color: var(--dark);
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.maestro.stickies p {
+  background-color: var(--Bmid);
+}
+
+.project_title .icon {
+  transform: rotate(-0.5turn);
 }
 
 .space {
@@ -426,7 +592,7 @@ button.anim::after {
 }
 
 /* Tablet & Smaller */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .t_hide {
     display: none;
   }
@@ -434,6 +600,18 @@ button.anim::after {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
+
+  .canvas {
+    padding: 24px;
+  }
+
+  .stickies p {
+    aspect-ratio: 1/1;
+  }
+
+  .auto {
+    justify-content: space-between
+  }
 
   .nav_link {
     color: var(--white);
@@ -625,11 +803,14 @@ button.anim::after {
     flex-direction: row;
     height: auto;
     padding: 0;
-    gap: 32px;
   }
 
   .R {
     justify-content: flex-end;
+  }
+
+  .header_container {
+    height:auto;
   }
 }
 
@@ -652,6 +833,14 @@ button.anim::after {
 
   .m_scroll {
     aspect-ratio: 0.5;
+  }
+
+  .L a {
+    padding: 24px 16px;
+  }
+
+  .L a:hover {
+    background-color: #181814;
   }
 }
 
