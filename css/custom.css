@@ -553,6 +553,14 @@ button.anim::after {
   color: var(--white);
 }
 
+.tag_container {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
 /* Mobile Only */
 @media only screen and (max-width: 600px) {
   .header {
@@ -586,11 +594,6 @@ button.anim::after {
     align-items: center;
   }
 
-  .tag_container {
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
 }
 
 /* Tablet & Smaller */
