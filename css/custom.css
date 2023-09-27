@@ -85,7 +85,7 @@ a .canvas:hover {
 
 .abbott .cat {
   background-color: var(--Ymid);
-  color: var(--dark);
+  color: #000000;
   padding: 0 8px;
   border-radius: 4px;
 }
@@ -105,7 +105,7 @@ a .canvas:hover {
 
 .allseater .cat {
   background-color: var(--Omid);
-  color: var(--dark);
+  color: #000000;
   padding: 0 8px;
   border-radius: 4px;
 }
@@ -129,7 +129,7 @@ a .canvas:hover {
 
 .pointb .cat {
   background-color: var(--Bmid);
-  color: var(--dark);
+  color: #000000;
   padding: 0 8px;
   border-radius: 4px;
 }
@@ -149,7 +149,7 @@ a .canvas:hover {
 
 .atlasnw .cat {
   background-color: var(--Gmid);
-  color: var(--dark);
+  color: #000000;
   padding: 0 8px;
   border-radius: 4px;
 }
@@ -169,7 +169,7 @@ a .canvas:hover {
 
 .robo .cat {
   background-color: var(--Pmid);
-  color: var(--dark);
+  color: #000000;
   padding: 0 8px;
   border-radius: 4px;
 }
@@ -189,7 +189,7 @@ a .canvas:hover {
 
 .maestro .cat {
   background-color: var(--Bmid);
-  color: var(--dark);
+  color: #000000;
   padding: 0 8px;
   border-radius: 4px;
 }
