@@ -17,6 +17,9 @@
   --Blight: #DFEEF9;
   --Bmid: #72C0F6;
   --Bdark: #0B69AB;
+  --Tlight: #E4F1EB;
+  --Tmid: #89CAAB;
+  --Tdark: #2E7168;
   --Glight: #E8F2DB;
   --Gmid: #A0D35E;
   --Gdark: #527821;
@@ -154,8 +157,24 @@ a .canvas:hover {
   border-radius: 4px;
 }
 
-.atlasnw.stickies p {
-  background-color: var(--Gmid);
+.snowledge h6, .snowledge h2 {
+  color: var(--Tdark);
+}
+
+.snowledge .canvas {
+  background-color: var(--Tlight);
+  border: 1px solid var(--Tmid);
+}
+
+.snowledge .cat {
+  background-color: var(--Tmid);
+  color: #000000;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.snowledge.stickies p {
+  background-color: var(--Tmid);
 }
 
 .robo h6, .robo h2 {
