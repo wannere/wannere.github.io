@@ -349,6 +349,7 @@ button.anim::after {
 .focus_text {
   font-size: 20px;
   line-height: 38px;
+  text-align: center;
 }
 
 .m_hide {
@@ -727,8 +728,8 @@ button.anim::after {
   }
 
   .focus_text {
-    font-size: 30px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 40px;
     margin-bottom: 0;
   }
 
