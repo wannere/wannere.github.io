@@ -59,8 +59,13 @@ body {
   margin-bottom: 8px;
 }
 
-a.project {
+.project {
   display: block;
+  margin-bottom:64px;
+}
+
+.portrait {
+  border-radius: 12px;
 }
 
 .canvas {
@@ -141,7 +146,7 @@ a .canvas:hover {
   background-color: var(--Bmid);
 }
 
-.atlasnw h6, .atlasnw h2 {
+.atlasnw h6,{
   color: var(--Gdark);
 }
 
@@ -157,7 +162,11 @@ a .canvas:hover {
   border-radius: 4px;
 }
 
-.snowledge h6, .snowledge h2 {
+.atlasnw.stickies p {
+  background-color: var(--Gmid);
+}
+
+.snowledge h6,{
   color: var(--Tdark);
 }
 
@@ -177,7 +186,7 @@ a .canvas:hover {
   background-color: var(--Tmid);
 }
 
-.robo h6, .robo h2 {
+.robo h6,{
   color: var(--Pdark);
 }
 
@@ -197,7 +206,7 @@ a .canvas:hover {
   background-color: var(--Pmid);
 }
 
-.maestro h6, .maestro h2 {
+.maestro h6,{
   color: var(--Bdark);
 }
 
@@ -349,7 +358,6 @@ button.anim::after {
 .focus_text {
   font-size: 20px;
   line-height: 38px;
-  text-align: center;
 }
 
 .m_hide {
@@ -383,6 +391,10 @@ button.anim::after {
 
 .cta_icon {
   font-size: 19px;
+}
+
+.nonh1 {
+  font-weight: 400;
 }
 
 .grey {
@@ -464,6 +476,7 @@ button.anim::after {
   border-radius: 10px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  position: relative;
 }
 
 .d_border {
@@ -479,12 +492,23 @@ button.anim::after {
   margin-bottom: -0.5em;
 }
 
+.usernav {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 0 0 22px 22px;
+}
+
 .m_scroll {
   aspect-ratio: 0.5;
   overflow:scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   width: 80%;
+  position:relative;
 }
 
 .m_scroll::-webkit-scrollbar {
@@ -499,6 +523,7 @@ button.anim::after {
 .m_border {
   border: 6px solid var(--dark);
   border-radius: 32px;
+  background-color: #F5F8F8;
 }
 
 .m_border.m_half {
@@ -630,6 +655,10 @@ button.anim::after {
 /* Tablet */
 @media only screen and (min-width: 600px) {
 
+/*  .projcol2 {
+    margin-top:100px;
+  }*/
+
   .canvas {
     padding: 24px;
   }
@@ -725,12 +754,6 @@ button.anim::after {
 
   .d_hide {
     display: none;
-  }
-
-  .focus_text {
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 0;
   }
 
   .about {
@@ -877,13 +900,7 @@ button.anim::after {
 @media (min-width: 1100px) {
 
   .space {
-    margin-bottom: 150px;
-  }
-
-  .focus {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin-bottom: 200px;
   }
 
   .d_scroll {
