@@ -3,6 +3,7 @@
   --accent: #FFD029;
   --dark: #37362C;
   --grey: #fafafa;
+  --greymid: #e5e5e5;
   --white: #ffffff;
   --drop: 2px 2px 8px lightgrey;
   --Ylight: #FAF2D6;
@@ -100,10 +101,6 @@ a .canvas:hover {
   border-radius: 4px;
 }
 
-.abbott h6 {
-  color: var(--Ydark);
-}
-
 .abbott.stickies p {
   background-color: var(--Ymid);
 }
@@ -120,16 +117,8 @@ a .canvas:hover {
   border-radius: 4px;
 }
 
-.allseater h6 {
-  color: var(--Odark);
-}
-
 .allseater.stickies p {
   background-color: var(--Omid);
-}
-
-.pointb h6 {
-  color: var(--Bdark);
 }
 
 .pointb .canvas {
@@ -148,10 +137,6 @@ a .canvas:hover {
   background-color: var(--Bmid);
 }
 
-.atlasnw h6,{
-  color: var(--Gdark);
-}
-
 .atlasnw .canvas {
   background-color: var(--Glight);
   border: 1px solid var(--Gmid);
@@ -166,10 +151,6 @@ a .canvas:hover {
 
 .atlasnw.stickies p {
   background-color: var(--Gmid);
-}
-
-.snowledge h6,{
-  color: var(--Tdark);
 }
 
 .snowledge .canvas {
@@ -188,10 +169,6 @@ a .canvas:hover {
   background-color: var(--Tmid);
 }
 
-.robo h6,{
-  color: var(--Pdark);
-}
-
 .robo .canvas {
   background-color: var(--Plight);
   border: 1px solid var(--Pmid);
@@ -206,10 +183,6 @@ a .canvas:hover {
 
 .robo.stickies p {
   background-color: var(--Pmid);
-}
-
-.maestro h6,{
-  color: var(--Bdark);
 }
 
 .maestro .canvas {
@@ -485,7 +458,7 @@ button.anim::after {
 
 .d_scroll {
   aspect-ratio: 16/11;
-  overflow:scroll;
+  overflow:hidden;
   border-radius: 10px;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -517,11 +490,15 @@ button.anim::after {
 
 .m_scroll {
   aspect-ratio: 0.5;
-  overflow:scroll;
+  overflow:hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   width: 80%;
   position:relative;
+}
+
+.scroll {
+  overflow: scroll;
 }
 
 .m_scroll::-webkit-scrollbar {
@@ -598,7 +575,7 @@ button.anim::after {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  padding: 16px;
+  padding: 18px;
 }
 
 .Ntitle {
@@ -633,6 +610,82 @@ button.anim::after {
   flex-wrap: wrap;
 }
 
+/* The switch - the box around the slider */
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 36px;
+ height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: var(--greymid);
+ -webkit-transition: .4s;
+ transition: .4s;
+ border-radius: 34px;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 16px;
+ width: 16px;
+ left: 2px;
+ bottom: 2px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+ border-radius: 50%;
+}
+
+.abbott input:checked + .slider {
+ background-color: var(--Ymid);
+}
+
+.pointb input:checked + .slider {
+ background-color: var(--Bmid);
+}
+
+.allseater input:checked + .slider {
+ background-color: var(--Omid);
+}
+
+.snowledge input:checked + .slider {
+ background-color: var(--Tmid);
+}
+
+.atlasnw input:checked + .slider {
+ background-color: var(--Gmid);
+}
+
+.robo input:checked + .slider {
+ background-color: var(--Pmid);
+}
+
+.maestro input:checked + .slider {
+ background-color: var(--Bmid);
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(16px);
+ -ms-transform: translateX(16px);
+ transform: translateX(16px);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -653,7 +706,7 @@ button.anim::after {
 }
 
 .nav_link.mactive {
-  background-color: var(--grey);
+  background-color: var(--greymid);
 }
 
 .nav_link.dactive {
