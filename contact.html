@@ -15,9 +15,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>August Wanner</title>
-  <meta name="description" content="Graphic design portfolio">
-  <meta name="author" content="August Wanner | Contact">
+  <title>August Wanner | Contact</title>
+  <meta name="description" content="UX design portfolio">
+  <meta name="author" content="August Wanner">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -62,7 +62,7 @@
     <div class="container">
       <div class="header_container">
         <div class="title_container">
-          <a href="index.html" id="name" class="Ntitle"><span class="m_hide">UX/UI Designer / </span><b>August Wanner</b></a>
+          <a href="index.html" id="myname" class="Ntitle"><span class="m_hide">UX/UI Designer / </span><b>August Wanner</b></a>
         </div>
         <div class="m_hide_flex u-flex-row">
           <a href="index.html" class="nav_link"><img src="images/icons/Cursor.svg"/> Home</a>
@@ -79,28 +79,48 @@
     </div>
   </div>
 
-    <!-- Contact form -->
-
-    <div class="footer">
-      <div class="container" style="margin-top:0;">
-        <p class="copyright u-margin-none mono">© August Wanner <span class="m_break">| </span><br class="d_break"/>Designed and developed by August Wanner</p>
-        <div class="u-flex-row-both auto foot_container">
-          <a href="mailto:wanneraugust@gmail.com" class="anim index" target="_blank">
-            <p class="u-margin-none mono">Email</p><img src="images/icons/up right.svg"/>
-          </a>
-          <a href="https://www.linkedin.com/in/augustwanner/" class="anim index" target="_blank">
-            <p class="u-margin-none mono">LinkedIn</p><img src="images/icons/up right.svg"/>
-          </a>
-          <a href="https://github.com/wannere" class="anim index" target="_blank">
-            <p class="u-margin-none mono">GitHub</p><img src="images/icons/up right.svg"/>
-          </a>
-          <button onclick="topFunction()" class="anim index" id="top" title="Top"  style="border:none;">
-            <p class="u-margin-none mono">Back to top</p>
-            <img src="images/icons/up.svg"/>
-          </button>
+  <!-- Contact form -->
+  <div class="container">
+    <div class="row six columns offset-by-three">
+      <h1>Let's talk!</h1>
+      <form action="contact.php" method="POST" enctype="text/plain">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="u-full-width">
         </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="u-full-width" required placeholder="Required">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" class="u-full-width" style="height: 200px;"></textarea>
+        </div>
+        <input type="submit" value="Send message" class="u-full-width">
+      </form>
+    </div>
+  </div>
+
+  <div class="footer shorty">
+    <div class="containerish u-flex-row">
+      <p class="copyright u-margin-none mono">© August Wanner <span class="m_break">| </span><br class="d_break"/>Designed and developed by August Wanner</p>
+      <div class="u-flex-row-both auto foot_container">
+        <a href="mailto:wanneraugust@gmail.com" class="anim index" target="_blank">
+          <p class="u-margin-none mono">Email</p><img src="images/icons/up right.svg"/>
+        </a>
+        <a href="https://www.linkedin.com/in/augustwanner/" class="anim index" target="_blank">
+          <p class="u-margin-none mono">LinkedIn</p><img src="images/icons/up right.svg"/>
+        </a>
+        <a href="https://github.com/wannere" class="anim index" target="_blank">
+          <p class="u-margin-none mono">GitHub</p><img src="images/icons/up right.svg"/>
+        </a>
+        <button onclick="topFunction()" class="anim index" id="top" title="Top"  style="border:none;">
+          <p class="u-margin-none mono">Back to top</p>
+          <img src="images/icons/up.svg"/>
+        </button>
       </div>
     </div>
+  </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

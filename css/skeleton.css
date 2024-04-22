@@ -177,15 +177,18 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 1px 30px 0 30px;
-  background-color: var(--accent);
+  background-color: var(--Ymid);
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  position: relative;}
+  position: relative;
+  border: 1px solid var(--Ymid);
+  border-radius: 6px;
+  }
 .button::before {
   content: '';
   z-index: -1;
@@ -367,7 +370,7 @@ form {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-full-width {
+.u-full-width {
   width: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
@@ -445,7 +448,7 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Self Clearing Goodness */
-/*.container:after,*/
+.container:after,
 .row:after,
 .u-cf {
   content: "";

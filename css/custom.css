@@ -227,7 +227,7 @@ a .canvas:hover {
   align-items: center;
 }
 
-#name {
+#myname {
   font-size: 16px;
   margin: 0;
 }
@@ -316,13 +316,7 @@ button.anim::after {
   padding: 16px 0;
 }
 
-.footer .container {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container .copyright {
+.containerish .copyright {
   text-align: center;
 }
 
@@ -686,6 +680,13 @@ input:checked + .slider:before {
  transform: translateX(16px);
 }
 
+.shorty {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -697,7 +698,7 @@ input:checked + .slider:before {
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 148px;
 }
 
 .header .container {
@@ -712,6 +713,16 @@ input:checked + .slider:before {
 .nav_link.dactive {
   background-color: #181814;
 }
+
+.containerish {
+  position: relative;
+  width: 96%;
+  max-width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  align-items: center;}
 
 /* Mobile Only */
 @media only screen and (max-width: 600px) {
@@ -741,7 +752,6 @@ input:checked + .slider:before {
   .projcol2 {
     margin-top:64px;;
   }
-
 }
 
 /* Tablet & Smaller */
@@ -757,6 +767,8 @@ input:checked + .slider:before {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
+  .containerish {
+    width: 85%;}
 
   .canvas {
     padding: 24px;
@@ -813,7 +825,7 @@ input:checked + .slider:before {
     text-align: center;
   }
 
-  #name {
+  #myname {
     font-size: 16px;
   }
 
@@ -994,6 +1006,12 @@ input:checked + .slider:before {
 /* Desktop */
 @media (min-width: 1100px) {
 
+  .containerish {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+
   .space {
     margin-bottom: 200px;
   }
@@ -1006,13 +1024,7 @@ input:checked + .slider:before {
     margin: 0 16px;
   }
 
-  .footer .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .container .copyright {
+  .containerish .copyright {
     text-align: left;
   }
 
