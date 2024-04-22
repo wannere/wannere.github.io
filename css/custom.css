@@ -105,6 +105,11 @@ a .canvas:hover {
   background-color: var(--Ymid);
 }
 
+.abbottsticky {
+  background-color: var(--Ymid);
+  padding:24px;
+}
+
 .allseater .canvas {
   background-color: var(--Olight);
   border: 1px solid var(--Omid);
@@ -119,6 +124,11 @@ a .canvas:hover {
 
 .allseater.stickies p {
   background-color: var(--Omid);
+}
+
+.allseatersticky {
+  background-color: var(--Omid);
+  padding:24px;
 }
 
 .pointb .canvas {
@@ -137,6 +147,11 @@ a .canvas:hover {
   background-color: var(--Bmid);
 }
 
+.pointbsticky {
+  background-color: var(--Bmid);
+  padding:24px;
+}
+
 .atlasnw .canvas {
   background-color: var(--Glight);
   border: 1px solid var(--Gmid);
@@ -151,6 +166,15 @@ a .canvas:hover {
 
 .atlasnw.stickies p {
   background-color: var(--Gmid);
+}
+
+.atlasnwsticky {
+  background-color: var(--Gmid);
+  padding:24px;
+}
+
+p.greystickies {
+  background-color: var(--greymid);
 }
 
 .snowledge .canvas {
@@ -169,6 +193,11 @@ a .canvas:hover {
   background-color: var(--Tmid);
 }
 
+.snowledgesticky {
+  background-color: var(--Tmid);
+  padding:24px;
+}
+
 .robo .canvas {
   background-color: var(--Plight);
   border: 1px solid var(--Pmid);
@@ -185,6 +214,11 @@ a .canvas:hover {
   background-color: var(--Pmid);
 }
 
+.robosticky {
+  background-color: var(--Pmid);
+  padding:24px;
+}
+
 .maestro .canvas {
   background-color: var(--Blight);
   border: 1px solid var(--Bmid);
@@ -199,6 +233,11 @@ a .canvas:hover {
 
 .maestro.stickies p {
   background-color: var(--Bmid);
+}
+
+.maestrosticky {
+  background-color: var(--Bmid);
+  padding:24px;
 }
 
 .space {
@@ -288,6 +327,10 @@ button.anim::after {
 .anim:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.b::after {
+  background-color: var(--dark);
 }
 
 .head_link {
@@ -687,6 +730,10 @@ input:checked + .slider:before {
   right:0;
 }
 
+.shortyd {
+  position:relative;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -699,6 +746,20 @@ input:checked + .slider:before {
 
 .container {
   margin-top: 148px;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.central {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .header .container {
@@ -767,6 +828,13 @@ input:checked + .slider:before {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
+  .shortyd {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+
   .containerish {
     width: 85%;}
 
