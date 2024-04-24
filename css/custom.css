@@ -530,7 +530,6 @@ button.anim::after {
   overflow:hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  width: 80%;
   position:relative;
 }
 
