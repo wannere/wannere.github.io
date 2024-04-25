@@ -496,7 +496,6 @@ button.anim::after {
 .d_scroll {
   aspect-ratio: 16/11;
   overflow:hidden;
-  border-radius: 10px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   position: relative;
@@ -1026,6 +1025,7 @@ input:checked + .slider:before {
 
   .d_border {
     border: 10px solid var(--dark);
+    border-radius: 10px;
   }
 
   .one {
