@@ -3,6 +3,7 @@
   --accent: #FFD029;
   --dark: #37362C;
   --grey: #fafafa;
+  --greymid: #e5e5e5;
   --white: #ffffff;
   --drop: 2px 2px 8px lightgrey;
   --Ylight: #FAF2D6;
@@ -40,10 +41,12 @@ body {
   border-radius: 50%;
 }
 
-#cursor{
-  position: fixed;
-  text-align: center;
-  pointer-events: none;
+.mono {
+  font-family: IBM Plex Mono;
+}
+
+.header {
+  position:sticky;
 }
 
 .material-symbols-outlined {
@@ -72,7 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap:8px;
+  gap:32px;
   padding: 16px;
   border-radius: 12px;
   transition: 0.2s ease-in-out;
@@ -98,12 +101,13 @@ a .canvas:hover {
   border-radius: 4px;
 }
 
-.abbott h6 {
-  color: var(--Ydark);
-}
-
 .abbott.stickies p {
   background-color: var(--Ymid);
+}
+
+.abbottsticky {
+  background-color: var(--Ymid);
+  padding:24px;
 }
 
 .allseater .canvas {
@@ -118,16 +122,13 @@ a .canvas:hover {
   border-radius: 4px;
 }
 
-.allseater h6 {
-  color: var(--Odark);
-}
-
 .allseater.stickies p {
   background-color: var(--Omid);
 }
 
-.pointb h6 {
-  color: var(--Bdark);
+.allseatersticky {
+  background-color: var(--Omid);
+  padding:24px;
 }
 
 .pointb .canvas {
@@ -146,8 +147,9 @@ a .canvas:hover {
   background-color: var(--Bmid);
 }
 
-.atlasnw h6,{
-  color: var(--Gdark);
+.pointbsticky {
+  background-color: var(--Bmid);
+  padding:24px;
 }
 
 .atlasnw .canvas {
@@ -166,8 +168,13 @@ a .canvas:hover {
   background-color: var(--Gmid);
 }
 
-.snowledge h6,{
-  color: var(--Tdark);
+.atlasnwsticky {
+  background-color: var(--Gmid);
+  padding:24px;
+}
+
+p.greystickies {
+  background-color: var(--greymid);
 }
 
 .snowledge .canvas {
@@ -186,8 +193,9 @@ a .canvas:hover {
   background-color: var(--Tmid);
 }
 
-.robo h6,{
-  color: var(--Pdark);
+.snowledgesticky {
+  background-color: var(--Tmid);
+  padding:24px;
 }
 
 .robo .canvas {
@@ -206,8 +214,9 @@ a .canvas:hover {
   background-color: var(--Pmid);
 }
 
-.maestro h6,{
-  color: var(--Bdark);
+.robosticky {
+  background-color: var(--Pmid);
+  padding:24px;
 }
 
 .maestro .canvas {
@@ -226,6 +235,11 @@ a .canvas:hover {
   background-color: var(--Bmid);
 }
 
+.maestrosticky {
+  background-color: var(--Bmid);
+  padding:24px;
+}
+
 .space {
   margin-bottom: 50px;
 }
@@ -238,11 +252,11 @@ a .canvas:hover {
 
 .header_container {
   width: 100%;
-  padding: 12px 16px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 11px 0;
 }
 
 .title_container {
@@ -252,7 +266,7 @@ a .canvas:hover {
   align-items: center;
 }
 
-#name {
+#myname {
   font-size: 16px;
   margin: 0;
 }
@@ -264,10 +278,14 @@ a .canvas:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap:24px;
-  padding: 16px;
   border-bottom: 1px solid var(--grey);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.10);
+}
+
+.dropdown_container .nav_link {
+  width:100%;
+  justify-content: flex-start;
+  padding: 16px 20px;
 }
 
 .collaborator {
@@ -297,7 +315,7 @@ a .canvas:hover {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--dark);
+  background-color: var(--white);
   transform-origin: bottom right;
   transition: transform 0.15s ease-out;
 }
@@ -309,6 +327,10 @@ button.anim::after {
 .anim:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.b::after {
+  background-color: var(--dark);
 }
 
 .head_link {
@@ -337,6 +359,10 @@ button.anim::after {
   padding: 16px 0;
 }
 
+.containerish .copyright {
+  text-align: center;
+}
+
 .foot {
   font-size: 12px;
   font-weight:400;
@@ -348,19 +374,16 @@ button.anim::after {
   display: block;
 }
 
-.header_line {
-  border-bottom: 1px solid var(--dark);
-  transition: 0.2s ease;
-  opacity: 30%;
-  width: 100%;
-}
-
 .focus_text {
   font-size: 20px;
   line-height: 38px;
 }
 
 .m_hide {
+  display: none;
+}
+
+.m_hide_flex {
   display: none;
 }
 
@@ -472,8 +495,7 @@ button.anim::after {
 
 .d_scroll {
   aspect-ratio: 16/11;
-  overflow:scroll;
-  border-radius: 10px;
+  overflow:hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   position: relative;
@@ -504,11 +526,14 @@ button.anim::after {
 
 .m_scroll {
   aspect-ratio: 0.5;
-  overflow:scroll;
+  overflow:hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  width: 80%;
   position:relative;
+}
+
+.scroll {
+  overflow: scroll;
 }
 
 .m_scroll::-webkit-scrollbar {
@@ -572,8 +597,10 @@ button.anim::after {
 
 .foot_container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap:wrap;
 }
 
 .nav_link {
@@ -583,19 +610,31 @@ button.anim::after {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  padding: 18px;
 }
 
 .Ntitle {
   color: var(--white);
 }
 
-.L {
-  display: none;
-}
-
 .foot_container button {
   background-color: var(--dark);
   color: var(--white);
+  margin: 16px 16px 0 16px;
+}
+
+.foot_container a {
+  color: var(--white);
+  margin: 16px 16px 0 16px;
+}
+
+.foot_container a p {
+  font-size: 12px;
+}
+
+.foot_container button p {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .tag_container {
@@ -606,22 +645,152 @@ button.anim::after {
   flex-wrap: wrap;
 }
 
+/* The switch - the box around the slider */
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 36px;
+ height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: var(--greymid);
+ -webkit-transition: .4s;
+ transition: .4s;
+ border-radius: 34px;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 16px;
+ width: 16px;
+ left: 2px;
+ bottom: 2px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+ border-radius: 50%;
+}
+
+.abbott input:checked + .slider {
+ background-color: var(--Ymid);
+}
+
+.pointb input:checked + .slider {
+ background-color: var(--Bmid);
+}
+
+.allseater input:checked + .slider {
+ background-color: var(--Omid);
+}
+
+.snowledge input:checked + .slider {
+ background-color: var(--Tmid);
+}
+
+.atlasnw input:checked + .slider {
+ background-color: var(--Gmid);
+}
+
+.robo input:checked + .slider {
+ background-color: var(--Pmid);
+}
+
+.maestro input:checked + .slider {
+ background-color: var(--Bmid);
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(16px);
+ -ms-transform: translateX(16px);
+ transform: translateX(16px);
+}
+
+.shorty {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.shortyd {
+  position:relative;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display:flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 148px;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.central {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header .container {
+  margin:0;
+  width:100%;
+}
+
+.nav_link.mactive {
+  background-color: var(--greymid);
+}
+
+.nav_link.dactive {
+  background-color: #181814;
+}
+
+.containerish {
+  position: relative;
+  width: 96%;
+  max-width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  align-items: center;}
+
 /* Mobile Only */
 @media only screen and (max-width: 600px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-  }
-
-  .container {
-    margin-top: 100px;
+  .header{
+    flex-direction: column;
   }
 
   .foot_container {
-    flex-direction: column;
+    justify-content: center;
   }
 
   .m_break {
@@ -639,6 +808,9 @@ button.anim::after {
     align-items: center;
   }
 
+  .projcol2 {
+    margin-top:64px;;
+  }
 }
 
 /* Tablet & Smaller */
@@ -654,13 +826,23 @@ button.anim::after {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
+  .shortyd {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+  }
 
-/*  .projcol2 {
-    margin-top:100px;
-  }*/
+  .containerish {
+    width: 85%;}
 
   .canvas {
     padding: 24px;
+  }
+
+  .header .container {
+    margin:0;
+    width:80%;
   }
 
   .stickies p {
@@ -674,6 +856,10 @@ button.anim::after {
   .nav_link {
     color: var(--white);
     gap: 8px;
+  }
+
+  .projcol2 {
+    margin-top:200px;
   }
 
   .footer_container {
@@ -693,8 +879,7 @@ button.anim::after {
   }
 
   .footer {
-    height: 76px;
-    padding: 0;
+    padding: 24px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -706,7 +891,7 @@ button.anim::after {
     text-align: center;
   }
 
-  #name {
+  #myname {
     font-size: 16px;
   }
 
@@ -716,16 +901,9 @@ button.anim::after {
 
   .header_container {
     flex-direction: row;
-    height: 76px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 32px;
-  }
-
-  .header_line {
-    display: none;
   }
 
   .dropdown_container {
@@ -750,6 +928,10 @@ button.anim::after {
 
   .m_hide {
     display: inline;
+  }
+
+  .m_hide_flex {
+    display: flex;
   }
 
   .d_hide {
@@ -781,6 +963,7 @@ button.anim::after {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
   .d-margin-none {
@@ -842,6 +1025,7 @@ button.anim::after {
 
   .d_border {
     border: 10px solid var(--dark);
+    border-radius: 10px;
   }
 
   .one {
@@ -850,19 +1034,9 @@ button.anim::after {
     justify-content: center;
   }
 
-  .L {
-    justify-content: flex-start;
-    flex-direction: row;
-    height: auto;
-    padding: 0;
-  }
-
-  .R {
-    justify-content: flex-end;
-  }
-
   .header_container {
     height:auto;
+    padding:0
   }
 
   .L a {
@@ -899,8 +1073,26 @@ button.anim::after {
 /* Desktop */
 @media (min-width: 1100px) {
 
+  .containerish {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;}
+
   .space {
     margin-bottom: 200px;
+  }
+
+  .foot_container button {
+    margin: 0 16px;
+  }
+
+  .foot_container a {
+    margin: 0 16px;
+  }
+
+  .containerish .copyright {
+    text-align: left;
   }
 
   .d_scroll {
@@ -911,11 +1103,7 @@ button.anim::after {
     aspect-ratio: 0.5;
   }
 
-  .L a {
-    padding: 24px 16px;
-  }
-
-  .L a:hover {
+  .nav_link:hover {
     background-color: #181814;
   }
 }

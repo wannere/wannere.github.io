@@ -139,7 +139,7 @@ body {
 /* For devices larger than 1000px */
 @media (min-width: 1000px) {
   .row {
-    margin: 0 0 150px 0;}
+    margin: 0 0 100px 0;}
 }
 
 /* Typography
@@ -148,14 +148,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 400;}
-h1 { font-size: 3.0rem;  font-weight: 600;}
-h2 { font-size: 2.4rem; font-weight: 600;}
-h3 { font-size: 2.4rem; }
+h1 { font-size: 3.2rem;  font-weight: 600;}
+h2 { font-size: 2.8rem; font-weight: 600;}
+h3 { font-size: 2.4rem; font-weight: 500;}
 h4 { font-size: 2.4rem; font-style: italic;}
 h5 { font-size: 2.0rem;}
 h6 { font-size: 1.6rem; font-weight:500;}
 
-p { font-size: 1.6rem; line-height: 2.8rem; margin-top: 0;}
+p { font-size: 1.6rem; line-height: 2.8rem; margin-top: 0;font-family: IBM Plex Sans}
 
 
 /* Links
@@ -177,15 +177,18 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 1px 30px 0 30px;
-  background-color: var(--accent);
+  background-color: var(--Ymid);
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  position: relative;}
+  position: relative;
+  border: 1px solid var(--Ymid);
+  border-radius: 6px;
+  }
 .button::before {
   content: '';
   z-index: -1;
@@ -216,8 +219,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: var(--Ymid);
+  border-color: var(--Ymid); }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -276,7 +279,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid var(--Ymid);
   outline: 0; }
 label,
 legend {
@@ -367,7 +370,7 @@ form {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-full-width {
+.u-full-width {
   width: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
