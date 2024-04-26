@@ -793,6 +793,10 @@ input:checked + .slider:before {
     justify-content: center;
   }
 
+  iframe {
+    height:1000px
+  }
+
   .m_break {
     display: none;
   }
