@@ -71,6 +71,14 @@ body {
   border-radius: 12px;
 }
 
+.question {
+  font-family: 'IBM Plex Mono';
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .canvas {
   display: flex;
   flex-direction: column;
@@ -89,7 +97,18 @@ a .canvas:hover {
   padding: 16px;
 }
 
+.linx {
+  color: #000000;
+  text-decoration: underline;
+  cursor:pointer;
+}
+
 .abbott .canvas {
+  background-color: var(--Ylight);
+  border: 1px solid var(--Ymid);
+}
+
+.abbott.canvas {
   background-color: var(--Ylight);
   border: 1px solid var(--Ymid);
 }
@@ -99,6 +118,10 @@ a .canvas:hover {
   color: #000000;
   padding: 0 8px;
   border-radius: 4px;
+}
+
+.abbott .linx {
+  background-color: var(--Ylight);
 }
 
 .abbott.stickies p {
@@ -122,6 +145,10 @@ a .canvas:hover {
   border-radius: 4px;
 }
 
+.allseater .linx {
+  background-color: var(--Olight);
+}
+
 .allseater.stickies p {
   background-color: var(--Omid);
 }
@@ -136,11 +163,20 @@ a .canvas:hover {
   border: 1px solid var(--Bmid);
 }
 
+.pointb.canvas {
+  background-color: var(--Blight);
+  border: 1px solid var(--Bmid);
+}
+
 .pointb .cat {
   background-color: var(--Bmid);
   color: #000000;
   padding: 0 8px;
   border-radius: 4px;
+}
+
+.pointb .linx {
+  background-color: var(--Blight);
 }
 
 .pointb.stickies p {
@@ -157,11 +193,20 @@ a .canvas:hover {
   border: 1px solid var(--Gmid);
 }
 
+.atlasnw.canvas {
+  background-color: var(--Glight);
+  border: 1px solid var(--Gmid);
+}
+
 .atlasnw .cat {
   background-color: var(--Gmid);
   color: #000000;
   padding: 0 8px;
   border-radius: 4px;
+}
+
+.atlasnw .linx {
+  background-color: var(--Glight);
 }
 
 .atlasnw.stickies p {
@@ -208,6 +253,10 @@ p.greystickies {
   color: #000000;
   padding: 0 8px;
   border-radius: 4px;
+}
+
+.robo .linx {
+  background-color: var(--Plight);
 }
 
 .robo.stickies p {
