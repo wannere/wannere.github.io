@@ -18,16 +18,16 @@
   --Blight: #DFEEF9;
   --Bmid: #72C0F6;
   --Bdark: #0B69AB;
-  --Tlight: #E4F1EB;
-  --Tmid: #89CAAB;
-  --Tdark: #2E7168;
+  --Tlight: #DCF2F2;
+  --Tmid: #70D4D3;
+  --Tdark: #2A7776;
   --Glight: #E8F2DB;
   --Gmid: #A0D35E;
   --Gdark: #527821;
 }
 
 body, a, button, button:hover {
-      cursor: url(../images/Cursor.svg), auto;
+  cursor: url(../images/Cursor.svg), auto;
 }
 
 body {
@@ -232,6 +232,10 @@ p.greystickies {
   color: #000000;
   padding: 0 8px;
   border-radius: 4px;
+}
+
+.snowledge .linx {
+  background-color: var(--Tlight);
 }
 
 .snowledge.stickies p {
@@ -574,7 +578,7 @@ button.anim::after {
 }
 
 .m_scroll {
-  aspect-ratio: 0.5;
+  aspect-ratio: 0.45;
   overflow:hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -1045,7 +1049,7 @@ input:checked + .slider:before {
   }
 
   .m_scroll {
-    aspect-ratio: 0.5;
+    aspect-ratio: 0.45;
   }
 
   .icon_justify {
@@ -1153,7 +1157,7 @@ input:checked + .slider:before {
   }
 
   .m_scroll {
-    aspect-ratio: 0.5;
+    aspect-ratio: 0.45;
   }
 
   .nav_link:hover {
@@ -1164,14 +1168,14 @@ input:checked + .slider:before {
 /* Large Desktop */
 @media (min-width: 1400px) {
   .m_scroll {
-    aspect-ratio: 0.5;
+    aspect-ratio: 0.45;
   }
 }
 
 /* Very Large Desktop */
 @media (min-width: 1500px) {
   .m_scroll {
-    aspect-ratio: 0.5;
+    aspect-ratio: 0.45;
   }
 
   .m_border {
