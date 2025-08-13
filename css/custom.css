@@ -89,8 +89,18 @@ body {
   transition: 0.2s ease-in-out;
 }
 
+*:focus,:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 a .canvas:hover {
-  box-shadow: var(--drop);
+    box-shadow: var(--drop);
+}
+
+a:has(>.canvas) {
+  border-radius: 12px;
 }
 
 .stickies p {
@@ -310,6 +320,9 @@ p.greystickies {
   margin: 0 auto;
   box-sizing: border-box;
   padding: 11px 0;
+  >a:focus, :focus-visible {
+    outline: 2px solid var(--accent);
+  }
 }
 
 .title_container {
@@ -654,6 +667,12 @@ button.anim::after {
   justify-content: space-between;
   align-items: center;
   flex-wrap:wrap;
+  >a:focus-visible {
+    outline: 2px solid var(--accent);
+  }
+  >button:focus-visible {
+    outline: 2px solid var(--accent);
+  }
 }
 
 .nav_link {
@@ -696,6 +715,7 @@ button.anim::after {
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 12px;
 }
 
 /* The switch - the box around the slider */
@@ -704,6 +724,12 @@ button.anim::after {
  display: inline-block;
  width: 36px;
  height: 20px;
+ .toggle:focus {
+  +.slider {
+    outline: 2px solid var(--dark);
+    outline-offset: 2px;
+  }
+ }
 }
 
 /* Hide default HTML checkbox */
@@ -722,8 +748,8 @@ button.anim::after {
  right: 0;
  bottom: 0;
  background-color: var(--greymid);
- -webkit-transition: .4s;
- transition: .4s;
+ -webkit-transition: .2s;
+ transition: .2s;
  border-radius: 34px;
 }
 
@@ -883,6 +909,11 @@ input:checked + .slider:before {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
+
+  .tag_container {
+    margin-bottom:0;
+  }
+
   .shortyd {
     position:absolute;
     bottom:0;
@@ -1141,11 +1172,14 @@ input:checked + .slider:before {
   }
 
   .foot_container button {
-    margin: 0 16px;
+    margin: 0 8px;
+    padding: 0 8px;
+    height: auto;
   }
 
   .foot_container a {
-    margin: 0 16px;
+    margin: 0 8px;
+    padding: 0 8px;
   }
 
   .containerish .copyright {
