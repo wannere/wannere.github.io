@@ -162,7 +162,7 @@ p { font-size: 1.6rem; line-height: 2.8rem; margin-top: 0;font-family: IBM Plex 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: var(--dark);
-  transition: 0.2s;
+  transition: 0.1s;
   text-decoration: underline;}
 a:hover {
   text-decoration: none;}
@@ -188,6 +188,7 @@ input[type="button"] {
   position: relative;
   border: 1px solid var(--Ymid);
   border-radius: 6px;
+  transition: 0.1s;
   }
 .button::before {
   content: '';
