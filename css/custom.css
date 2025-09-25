@@ -26,10 +26,6 @@
   --Gdark: #527821;
 }
 
-body, a, button, button:hover {
-  cursor: url(../images/Cursor.svg), auto;
-}
-
 body {
   background-color: var(--grey);
   background-image: url(../images/BG.svg)
