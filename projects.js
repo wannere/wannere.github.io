@@ -10,6 +10,3 @@ $(document).ready(function(){
     $(this).parents(".u-flex-column").find("div:first-child").toggleClass("scroll");
   });
 });
-$(document).mousemove(function(e){
-    $("#cursor").css({left:e.clientX, top:e.clientY});
-});
